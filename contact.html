@@ -10,7 +10,78 @@
     </head>
     <body>
         <header class="header" id="header"></header>
+
+        <section class="contact__title">
+            <div class="contact__title-text">
+                <h3>RESERVE YOUR TABLE</h3>
+                <h1>CONTACT</h1>
+            </div>
+        </section>
+        <section class="contact__us">
+            <div class="contact__us-info">
+                <div class="address">
+                    <img src="/assets/location.png" alt="location" />
+                    <div class="address__text">
+                        <h2>Find restaurant</h2>
+                        <p>40 Park Ave, Brooklyn, New York</p>
+                        <a href="#">Get Directions</a>
+                    </div>
+                </div>
+                <div class="phone">
+                    <img src="/assets/phone.png" alt="phone" />
+                    <div class="phone__text">
+                        <h2>Phone & Email</h2>
+                        <p>1-800-111-2222</p>
+                        <p>contact@example.com</p>
+                    </div>
+                </div>
+                <div class="hours">
+                    <img src="/assets/hours.png" alt="hours" />
+                    <div class="hours__text">
+                        <h2>Open hours</h2>
+                        <p>Monday - Thursday: 9AM - 9PM</p>
+                        <p>Friday - Sunday: 9AM - 12PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact__us-form">
+                <form class="form">
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Name"
+                        required
+                    /><br /><br />
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="EMail"
+                        required
+                    /><br /><br />
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="4"
+                        cols="50"
+                        placeholder="Message"
+                        required
+                    ></textarea
+                    ><br /><br />
+                    <input
+                        class="form-btn"
+                        type="button"
+                        value="Send Message"
+                        onclick="submitForm()"
+                    />
+                </form>
+            </div>
+        </section>
+        <section class="map" id="map"></section>
+
         <footer class="footer" id="footer"></footer>
+        <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script
             type="text/javascript"

@@ -750,3 +750,128 @@ header.scrolled {
         }
     }
 }
+.contact__title{
+    height: 100vh;
+    padding-top: 85px;
+    background-image: url(/assets/contact-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &-text{
+        text-align: center;
+        color: white;
+        padding-top: 380px;
+        h3{
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        h1{
+            font-size: 58px;
+            letter-spacing: 1rem;
+        }
+    }
+}
+.contact__us{
+    width: 1300px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 150px;
+    &-info{
+        .address, .phone, .hours{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 50px;
+            color: white;
+            h2{
+                font-size: 28px;
+                text-transform: uppercase;
+                margin-bottom: 15px;
+            }
+            a{
+                font-size: 20px;
+                color: #FFC999;
+                text-decoration: none;
+                font-style: italic;
+                position: relative;
+            }
+            a::before {
+                content: '';
+                position: absolute;
+                left: 0; 
+                bottom: -5px;
+                width: 0;
+                height: 2px;
+                background-color: #FFC999;
+                transition: width 0.35s;
+            }
+            a:hover:before {
+                width: 100%;
+            }
+            p{
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    &-form{
+        flex-grow: 1;
+        padding: 0 30px;
+        .form{
+            #name{
+                width: 100%;
+                border: none;
+                background-color: transparent;
+                border-bottom: 1px solid white;
+                padding: 10px 0;
+                color: white;
+                padding: 15px;
+                font-size: 16px;
+            }
+            #email{
+                width: 100%;
+                border: none;
+                background-color: transparent;
+                border-bottom: 1px solid white;
+                padding: 10px 0;
+                color: white;
+                padding: 15px;
+                font-size: 16px;
+            }
+            #message{
+                width: 100%;
+                border: none;
+                background-color: transparent;
+                border-bottom: 1px solid white;
+                padding: 10px 0;
+                color: white;
+                padding: 15px;
+                font-size: 16px;
+            }
+            .form-btn{
+                padding: 20px 30px;
+                font-size: 16px;
+                cursor: pointer;
+                font-style: italic;
+                text-transform: uppercase;
+                border: 1px solid #FFC999;
+                background: linear-gradient(to left, #0E1721 50%, #FFC999 50%) right;
+                background-size: 200%;
+                transition: .2s ease-out;
+                color: #ffc999;
+                margin-top: 50px;
+            }
+            .form-btn:hover{
+                color: black;
+                background-position: left;
+            }
+        }
+    }
+}
+
+.map{
+    width: 100%;
+    height: 400px;
+    margin-bottom: 100px;
+}

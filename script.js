@@ -55,3 +55,10 @@ $(document).ready(function() {
     $("#header").load("header.html");
     $("#footer").load("footer.html");
 });
+
+let map;
+
+DG.then(function () {
+    map = DG.map('map', {center: [50.45, 30.52], zoom: 8});
+    DG.marker([50.45, 30.52]).addTo(map).bindPopup('Greetings from Ukraine!');
+});

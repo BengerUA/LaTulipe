@@ -523,4 +523,167 @@ header.scrolled {
 .about__title-text h1 {
   font-size: 58px;
   letter-spacing: 1rem;
+}
+
+.history {
+  width: 1300px;
+  margin: 50px auto;
+}
+.history h1 {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto;
+  font-size: 48px;
+  margin-bottom: 100px;
+  letter-spacing: 3px;
+}
+.history .origins, .history .relocation, .history .traditions, .history .celebrity, .history .accalades, .history .sustainability, .history .community {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.history .origins__text, .history .relocation__text, .history .traditions__text, .history .celebrity__text, .history .accalades__text, .history .sustainability__text, .history .community__text {
+  width: 800px;
+}
+.history .origins__text h3, .history .relocation__text h3, .history .traditions__text h3, .history .celebrity__text h3, .history .accalades__text h3, .history .sustainability__text h3, .history .community__text h3 {
+  color: #FFC999;
+  line-height: 1.2;
+  font-size: 32px;
+  border-bottom: 1px solid #FFC999;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.history .origins__text p, .history .relocation__text p, .history .traditions__text p, .history .celebrity__text p, .history .accalades__text p, .history .sustainability__text p, .history .community__text p {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 80px;
+}
+.history .origins .origins-bg, .history .relocation .origins-bg, .history .traditions .origins-bg, .history .celebrity .origins-bg, .history .accalades .origins-bg, .history .sustainability .origins-bg, .history .community .origins-bg {
+  border-bottom-right-radius: 30px;
+  border-top-left-radius: 30px;
+  width: 400px;
+  height: 300px;
+  background-image: url(/assets/origins.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.history .origins .relocation-bg, .history .relocation .relocation-bg, .history .traditions .relocation-bg, .history .celebrity .relocation-bg, .history .accalades .relocation-bg, .history .sustainability .relocation-bg, .history .community .relocation-bg {
+  border-bottom-right-radius: 30px;
+  border-top-left-radius: 30px;
+  width: 400px;
+  height: 300px;
+  background-image: url(/assets/relocation.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.history .origins .traditions-bg, .history .relocation .traditions-bg, .history .traditions .traditions-bg, .history .celebrity .traditions-bg, .history .accalades .traditions-bg, .history .sustainability .traditions-bg, .history .community .traditions-bg {
+  border-bottom-right-radius: 30px;
+  border-top-left-radius: 30px;
+  width: 400px;
+  height: 300px;
+  background-image: url(/assets/TRADITIONS.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.history .origins .celebrity-bg, .history .relocation .celebrity-bg, .history .traditions .celebrity-bg, .history .celebrity .celebrity-bg, .history .accalades .celebrity-bg, .history .sustainability .celebrity-bg, .history .community .celebrity-bg {
+  border-bottom-right-radius: 30px;
+  border-top-left-radius: 30px;
+  width: 400px;
+  height: 300px;
+  background-image: url(/assets/CELEBRITY.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.history .origins .accalades-bg, .history .relocation .accalades-bg, .history .traditions .accalades-bg, .history .celebrity .accalades-bg, .history .accalades .accalades-bg, .history .sustainability .accalades-bg, .history .community .accalades-bg {
+  border-bottom-right-radius: 30px;
+  border-top-left-radius: 30px;
+  width: 400px;
+  height: 300px;
+  background-image: url(/assets/ACCOLADES.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.history .origins .sustainability-bg, .history .relocation .sustainability-bg, .history .traditions .sustainability-bg, .history .celebrity .sustainability-bg, .history .accalades .sustainability-bg, .history .sustainability .sustainability-bg, .history .community .sustainability-bg {
+  border-bottom-right-radius: 30px;
+  border-top-left-radius: 30px;
+  width: 400px;
+  height: 300px;
+  background-image: url(/assets/SUSTAINABILITY.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.history .origins .community-bg, .history .relocation .community-bg, .history .traditions .community-bg, .history .celebrity .community-bg, .history .accalades .community-bg, .history .sustainability .community-bg, .history .community .community-bg {
+  border-bottom-right-radius: 30px;
+  border-top-left-radius: 30px;
+  width: 400px;
+  height: 300px;
+  background-image: url(/assets/community.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mission {
+  margin-bottom: 100px;
+}
+.mission .slider {
+  width: 1300px;
+  height: auto;
+  margin: 100px auto;
+  position: relative;
+}
+.mission .slider h1 {
+  position: absolute;
+  bottom: 100px;
+  left: 30px;
+  color: white;
+  font-size: 40px;
+}
+.mission .slider p {
+  width: 400px;
+  position: absolute;
+  bottom: 15px;
+  left: 30px;
+  color: white;
+  font-size: 18px;
+}
+.mission .slider .slide1 {
+  width: 500px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.7)), url("/assets/slide1.jpg");
+  background-position: bottom;
+}
+.mission .slider .slide2 {
+  width: 500px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.7)), url("/assets/slide2.jpg");
+  background-position: bottom;
+}
+.mission .slider .slide3 {
+  width: 500px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.7)), url("/assets/slide3.jpg");
+  background-position: bottom;
+}
+.mission .slider .slide4 {
+  width: 500px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.7)), url("/assets/slide4.webp");
+  background-position: bottom;
 }/*# sourceMappingURL=style.css.map */

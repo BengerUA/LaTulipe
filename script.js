@@ -50,3 +50,8 @@ window.addEventListener('scroll', function() {
         header.classList.remove('scrolled');
     }
 });
+
+$(document).ready(function() {
+    $("#header").load("header.html");
+    $("#footer").load("footer.html");
+});

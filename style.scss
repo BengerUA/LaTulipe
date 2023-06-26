@@ -531,3 +531,24 @@ header.scrolled {
         }
     }
 }
+.about__title{
+    height: 100vh;
+    padding-top: 85px;
+    background-image: url(/assets/about-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &-text{
+        text-align: center;
+        color: white;
+        padding-top: 380px;
+        h3{
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        h1{
+            font-size: 58px;
+            letter-spacing: 1rem;
+        }
+    }
+}

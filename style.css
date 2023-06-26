@@ -501,4 +501,26 @@ header.scrolled {
 .menu__list .starters .dish__items .dish h5, .menu__list .main__courses .dish__items .dish h5 {
   font-size: 18px;
   color: #FFC999;
+}
+
+.about__title {
+  height: 100vh;
+  padding-top: 85px;
+  background-image: url(/assets/about-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about__title-text {
+  text-align: center;
+  color: white;
+  padding-top: 380px;
+}
+.about__title-text h3 {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.about__title-text h1 {
+  font-size: 58px;
+  letter-spacing: 1rem;
 }/*# sourceMappingURL=style.css.map */

@@ -662,6 +662,7 @@ header.scrolled {
   background-size: cover;
   background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.7)), url("/assets/slide1.jpg");
   background-position: bottom;
+  border-radius: 20px;
 }
 .mission .slider .slide2 {
   width: 500px;
@@ -670,6 +671,7 @@ header.scrolled {
   background-size: cover;
   background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.7)), url("/assets/slide2.jpg");
   background-position: bottom;
+  border-radius: 20px;
 }
 .mission .slider .slide3 {
   width: 500px;
@@ -678,6 +680,7 @@ header.scrolled {
   background-size: cover;
   background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.7)), url("/assets/slide3.jpg");
   background-position: bottom;
+  border-radius: 20px;
 }
 .mission .slider .slide4 {
   width: 500px;
@@ -686,4 +689,37 @@ header.scrolled {
   background-size: cover;
   background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.7)), url("/assets/slide4.webp");
   background-position: bottom;
+  border-radius: 20px;
+}
+
+.workers {
+  margin-bottom: 100px;
+}
+.workers__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.workers__list-item {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.workers__list-item img {
+  width: 300px;
+  height: 400px;
+  border-top-right-radius: 45%;
+  border-top-left-radius: 45%;
+  margin-bottom: 20px;
+}
+.workers__list-item h4 {
+  color: #FFC999;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.workers__list-item h2 {
+  color: white;
+  font-size: 28px;
 }/*# sourceMappingURL=style.css.map */

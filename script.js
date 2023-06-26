@@ -56,9 +56,40 @@ $(document).ready(function() {
     $("#footer").load("footer.html");
 });
 
-let map;
 
-DG.then(function () {
-    map = DG.map('map', {center: [50.45, 30.52], zoom: 8});
-    DG.marker([50.45, 30.52]).addTo(map).bindPopup('Greetings from Ukraine!');
+window.onload = function(){
+    let modal = document.getElementById("myModal");
+    let btn = document.getElementById("reservation-btn");
+    let span = document.getElementsByClassName("close")[0];
+
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+};
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    let map = L.map('map').setView([50.45, 30.52], 13);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+    }).addTo(map);
+    L.marker([50.45, 30.52]).addTo(map).bindPopup('Greetings from Ukraine!').openPopup();
 });
+
+
+
+function toggleMenu() {
+    let menu = document.querySelector('.menu__aside');
+    menu.classList.toggle('show');
+}

@@ -12,6 +12,15 @@
             <a class="logo" href="#">
                 <img src="/assets/latulipe-logo1.png" alt="logo" />
             </a>
+            <div class="mobile__menu">
+                <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+                <ul class="menu__aside">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
             <nav class="nav">
                 <ul>
                     <li>
@@ -27,9 +36,45 @@
                         <a href="contact.html">Contact</a>
                     </li>
                     <li>
-                        <a class="reservation" href="reservation.html"
-                            >Reservation</a
-                        >
+                        <button id="reservation-btn">Reservation</button>
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <div class="contact__us-form">
+                                    <form class="form">
+                                        <input
+                                            type="text"
+                                            id="name"
+                                            name="name"
+                                            placeholder="Name"
+                                            required
+                                        /><br /><br />
+                                        <input
+                                            type="email"
+                                            id="email"
+                                            name="email"
+                                            placeholder="EMail"
+                                            required
+                                        /><br /><br />
+                                        <textarea
+                                            id="message"
+                                            name="message"
+                                            rows="4"
+                                            cols="50"
+                                            placeholder="Message"
+                                            required
+                                        ></textarea
+                                        ><br /><br />
+                                        <input
+                                            class="form-btn"
+                                            type="button"
+                                            value="Send Message"
+                                            onclick="submitForm()"
+                                        />
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </nav>

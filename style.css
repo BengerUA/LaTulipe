@@ -1,0 +1,387 @@
+body {
+  background-color: #0E1721;
+}
+
+.header {
+  position: fixed;
+  margin: 0 auto;
+  width: 100%;
+  z-index: 1;
+  background-color: transparent;
+  transition: background-color 0.5s ease;
+  padding: 15px 0;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header .logo img {
+  width: 200px;
+  height: 50px;
+}
+.header .nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+}
+.header .nav ul a {
+  color: white;
+  text-decoration: none;
+}
+.header .nav ul a:hover {
+  color: #FFC999;
+  text-decoration: none;
+}
+.header .nav ul .reservation {
+  padding: 15px 25px;
+  border: 1px solid #FFC999;
+  background: linear-gradient(to left, #0E1721 50%, #FFC999 50%) right;
+  background-size: 200%;
+  transition: 0.2s ease-out;
+}
+.header .nav ul .reservation:hover {
+  color: black;
+  background-position: left;
+}
+
+header.scrolled {
+  background-color: #0E1721;
+  border-bottom: 1px solid white;
+}
+
+.video {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.main {
+  padding-top: 400px;
+}
+.main__text-inner {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 400px;
+}
+.main__text-inner h4 {
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: white;
+  margin-bottom: 20px;
+}
+.main__text-inner h1 {
+  font-size: 4.5rem;
+  color: white;
+  letter-spacing: 0.05em;
+  margin-bottom: 50px;
+}
+.main__text-inner .find__more-btn {
+  padding: 15px 25px;
+  border: none;
+  border-right: 1px solid #FFC999;
+  background: linear-gradient(to left, #FFFFFF 50%, #FFC999 50%) right;
+  background-size: 200%;
+  transition: 0.2s ease-out;
+}
+.main__text-inner .find__more-btn:hover {
+  color: black;
+  background-position: left;
+  cursor: pointer;
+}
+.main .tradition {
+  background-color: #0E1721;
+  padding: 100px 0;
+}
+.main .tradition__inner h3 {
+  width: 220px;
+  text-align: center;
+  color: #ffc999;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ffc999;
+  margin: 0 auto;
+}
+.main .tradition__inner h1 {
+  text-align: center;
+  font-size: 58px;
+  text-transform: uppercase;
+  color: white;
+  margin: 60px 0;
+}
+.main .tradition__inner .history__slider {
+  display: flex;
+  gap: 60px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.main .tradition__inner .history__slider .year {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #FFC999;
+  margin-bottom: 20px;
+}
+.main .tradition__inner .history__slider .achieve {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+.main .tradition__inner .history__slider p {
+  font-size: 18px;
+  color: #D0D7DF;
+  margin-bottom: 20px;
+}
+.main .tradition__inner .history__slider .left__text {
+  width: 300px;
+}
+.main .tradition__inner .history__slider .left__text .year, .main .tradition__inner .history__slider .left__text .achieve, .main .tradition__inner .history__slider .left__text p {
+  text-align: right;
+}
+.main .tradition__inner .history__slider .right__text {
+  width: 300px;
+}
+.main .tradition__inner .history__slider .right__text .year, .main .tradition__inner .history__slider .right__text .achieve, .main .tradition__inner .history__slider .right__text p {
+  -moz-text-align-last: left;
+       text-align-last: left;
+}
+.main .tradition__inner .history__slider .slider {
+  width: 500px;
+}
+.main .tradition__inner .history__slider .slider img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+.main .menu {
+  margin-bottom: 100px;
+}
+.main .menu__inner {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.main .menu__inner .menu__box {
+  width: 20%;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.5s ease-out;
+}
+.main .menu__inner .menu__box h3 {
+  display: none;
+}
+.main .menu__inner .menu__box:hover {
+  scale: 1.1;
+  transition: 0.5s ease-out;
+  position: relative;
+  cursor: pointer;
+}
+.main .menu__inner .menu__box:hover h3 {
+  display: block;
+  color: white;
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.main .menu__inner .crab {
+  background-image: url(/assets/crab.jpg);
+}
+.main .menu__inner .losos {
+  background-image: url(/assets/losos.jpg);
+}
+.main .menu__inner .plates {
+  background-image: url(/assets/plates.jpg);
+}
+.main .menu__inner .cocktail {
+  background-image: url(/assets/cocktail.jpg);
+}
+.main .reservation {
+  background-image: url(/assets/bg-wine-glass.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  text-align: center;
+  padding: 100px 0;
+}
+.main .reservation h3 {
+  margin: 0 auto;
+  width: 180px;
+  color: #ffc999;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ffc999;
+}
+.main .reservation h1 {
+  font-size: 58px;
+  text-transform: uppercase;
+  color: white;
+  margin: 40px 0;
+}
+.main .reservation-btn {
+  padding: 15px 25px;
+  border: 1px solid #FFC999;
+  background: linear-gradient(to left, #0E1721 50%, #FFC999 50%) right;
+  background-size: 200%;
+  transition: 0.2s ease-out;
+  color: white;
+}
+.main .reservation-btn:hover {
+  color: black;
+  background-position: left;
+}
+.main .team {
+  margin: 100px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+.main .team__text {
+  max-width: 770px;
+}
+.main .team__text h3 {
+  width: 135px;
+  color: #ffc999;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ffc999;
+}
+.main .team__text h1 {
+  font-size: 58px;
+  text-transform: uppercase;
+  color: white;
+  margin: 40px 0;
+}
+.main .team__text-icons {
+  display: flex;
+  gap: 30px;
+}
+.main .team__text p {
+  color: #D0D7DF;
+  margin: 20px 0;
+  font-size: 18px;
+}
+.main .team__text-bottom {
+  display: flex;
+  gap: 200px;
+  margin-top: 40px;
+}
+.main .team__text-bottom h2 {
+  color: white;
+  font-size: 36px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.main .team__text-bottom ul li {
+  color: white;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+.main .team__img img {
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+.main .contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  background-color: #fff;
+  padding-top: 100px;
+  text-align: center;
+  padding-bottom: 100px;
+}
+.main .contact__form {
+  border: 2px solid #FFC999;
+  padding: 20px;
+  border-radius: 10px;
+  width: 600px;
+}
+.main .contact__form h1 {
+  font-size: 58px;
+  text-transform: uppercase;
+  color: black;
+  margin: 40px 0;
+}
+.main .contact__form p {
+  color: #686868;
+  margin: 20px 0;
+  font-size: 18px;
+}
+.main .contact__form .form {
+  text-align: center;
+}
+.main .contact__form .form #name, .main .contact__form .form #email, .main .contact__form .form textarea {
+  width: 500px;
+  height: 40px;
+  outline: none;
+  border: none;
+  background-color: #FFC999;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+.main .contact__form .form-btn {
+  padding: 15px 25px;
+  border: 1px solid #FFC999;
+  background: linear-gradient(to left, #0E1721 50%, #FFC999 50%) right;
+  background-size: 200%;
+  transition: 0.2s ease-out;
+  color: white;
+}
+.main .contact__form .form-btn:hover {
+  color: black;
+  background-position: left;
+  cursor: pointer;
+}
+.main .contact__img img {
+  width: 600px;
+  height: 500px;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.footer {
+  padding: 30px 0;
+}
+.footer__info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer__info .contacts a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.footer__info .worktime p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+.footer p {
+  text-align: center;
+  color: white;
+  margin-top: 40px;
+}
+
+.slick-dots {
+  margin-bottom: 30px;
+}
+.slick-dots li button {
+  scale: 1.5;
+}
+.slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: white;
+}/*# sourceMappingURL=style.css.map */

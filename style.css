@@ -1000,35 +1000,6 @@ header.scrolled {
     display: none;
   }
 }
-.menu__aside {
-  width: 100%;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: none;
-}
-
-.menu__aside li {
-  text-align: center;
-}
-
-.menu__aside li a {
-  display: block;
-  color: #fff;
-  padding: 16px;
-  text-decoration: none;
-}
-
-.menu-icon {
-  color: #fff;
-  font-size: 24px;
-  cursor: pointer;
-}
-
-.show {
-  display: block !important;
-}
-
 @media (max-width: 768px) {
   .mobile__menu {
     display: block;

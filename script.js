@@ -88,3 +88,17 @@ document.addEventListener("DOMContentLoaded", function() {
     L.marker([50.45, 30.52]).addTo(map).bindPopup('Greetings from Ukraine!').openPopup();
 });
 
+
+$(document).ready(function() {
+    setInterval(window.onload = function(){
+        const burgerMenu = document.querySelector('.burger-menu');
+        const sideMenu = document.querySelector('.side-menu');
+        
+        burgerMenu.addEventListener('click', toggleMenu);
+        
+        function toggleMenu() {
+            sideMenu.classList.toggle('show-menu');
+        }
+    });
+});
+

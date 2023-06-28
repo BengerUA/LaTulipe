@@ -1,3 +1,5 @@
+
+// slider 
 $(document).ready(function(){
     $('.slider').slick({
         fade: true,
@@ -10,6 +12,8 @@ $(document).ready(function(){
 });
 
 
+
+// form submit 
 function submitForm() {
     let name = document.getElementById('name').value;
     let email = document.getElementById('email').value;
@@ -39,7 +43,7 @@ function submitForm() {
 }
 
 
-
+// scroll 
 window.addEventListener('scroll', function() {
     let header = document.querySelector('header');
     let scrolled = window.pageYOffset || document.documentElement.scrollTop;
@@ -52,34 +56,14 @@ window.addEventListener('scroll', function() {
 });
 
 
+// header & footer 
 $(document).ready(function() {
     $("#header").load("header.html");
     $("#footer").load("footer.html");
 });
 
 
-window.onload = function(){
-    let modal = document.getElementById("myModal");
-    let btn = document.getElementById("reservation-btn");
-    let span = document.getElementsByClassName("close")[0];
-
-    btn.onclick = function() {
-        modal.style.display = "block";
-    }
-
-    span.onclick = function() {
-        modal.style.display = "none";
-    }
-
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-};
-
-
-
+// location 
 document.addEventListener("DOMContentLoaded", function() {
     let map = L.map('map').setView([50.45, 30.52], 13);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -88,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function() {
     L.marker([50.45, 30.52]).addTo(map).bindPopup('Greetings from Ukraine!').openPopup();
 });
 
-
+// burger menu for mobile and tablet 
 $(document).ready(function() {
     setInterval(window.onload = function(){
         const burgerMenu = document.querySelector('.burger-menu');
@@ -102,3 +86,28 @@ $(document).ready(function() {
     });
 });
 
+
+// modal form on btn
+
+$(document).ready(function() {
+    setInterval(window.onload = function(){
+        let modal = document.getElementById("myModal");
+        let btn = document.getElementById("reservation-btn");
+        let span = document.getElementsByClassName("close")[0];
+        
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+        
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    }
+    );
+});

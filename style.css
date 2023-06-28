@@ -1,5 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&family=Manrope&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #0E1721;
+}
+
+.video {
+  padding: 300px 0;
+  background-color: #8B96A6;
+  overflow: hidden;
+  position: relative;
+}
+
+.video__clip {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 0;
+  width: 1938px;
+  transform: translate(-50%, -50%);
+  opacity: 0.5;
+}
+.video__clip-title {
+  font-family: "Crimson Text", serif;
+  font-size: 70px;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+.video__clip-title .post-subtitle {
+  font-size: 12px;
+  color: white;
+  font-family: "Manrope", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.video__clip-title .post-title {
+  font-family: "Crimson Text", serif;
+  color: white;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.video__clip-title .find-more__btn {
+  color: white;
+  text-decoration: none;
+  font-style: italic;
+  font-family: "Crimson Text", serif;
+  padding: 10px 35px;
+  font-size: 18px;
+  border: 1px solid white;
+}
+
+body > main > section.team > div.team__img > img {
+  width: 100%;
+}
+
+body > main > section.contact > div.contact__img > img {
+  width: 100%;
+}
+
+#myModal > div > div > form {
+  display: block;
+}
+
+#header > div > .nav {
+  display: none;
 }
 
 .header {
@@ -20,405 +88,81 @@ body {
   width: 200px;
   height: 50px;
 }
-.header .nav ul {
-  display: flex;
-  list-style-type: none;
-  align-items: center;
-  gap: 20px;
-}
-.header .nav ul a {
-  color: white;
-  text-decoration: none;
-}
-.header .nav ul a:hover {
-  color: #FFC999;
-  text-decoration: none;
-}
 
 header.scrolled {
   background-color: #0E1721;
   border-bottom: 1px solid white;
 }
 
-.mobile__menu {
-  display: none;
+#footer > div > div > div.logo > a > img {
+  width: 150px;
 }
 
-.video {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -1;
-  filter: blur(2px);
-  -webkit-filter: blur(2px);
+#header > div > a > img {
+  width: 150px;
 }
 
-.main {
-  padding-top: 400px;
+body > main {
+  margin: 50px 0;
 }
-.main__text-inner {
-  width: 100%;
-  height: 100%;
+
+body > main > section.tradition {
   text-align: center;
-  margin: 0 auto;
-  padding-bottom: 400px;
 }
-.main__text-inner h4 {
-  font-size: 20px;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: white;
-  margin-bottom: 20px;
-}
-.main__text-inner h1 {
-  font-size: 4.5rem;
-  color: white;
-  letter-spacing: 0.05em;
-  margin-bottom: 50px;
-}
-.main__text-inner .find__more-btn {
-  padding: 15px 25px;
-  border: none;
-  border-right: 1px solid #FFC999;
-  background: linear-gradient(to left, #FFFFFF 50%, #FFC999 50%) right;
-  background-size: 200%;
-  transition: 0.2s ease-out;
-}
-.main__text-inner .find__more-btn:hover {
-  color: black;
-  background-position: left;
-  cursor: pointer;
-}
-.main .tradition {
-  background-color: #0E1721;
-  padding: 100px 0;
-}
-.main .tradition__inner h3 {
-  width: 220px;
-  text-align: center;
+
+body > main > section.tradition > div > span {
+  font-family: "Manrope", sans-serif;
   color: #ffc999;
-  text-transform: uppercase;
+  font-size: 13px;
+  padding-bottom: 5px;
   border-bottom: 1px solid #ffc999;
-  margin: 0 auto;
-}
-.main .tradition__inner h1 {
-  text-align: center;
-  font-size: 58px;
   text-transform: uppercase;
+}
+
+body > main > section.tradition > div > h2 {
   color: white;
-  margin: 60px 0;
-}
-.main .tradition__inner .history__slider {
-  display: flex;
-  gap: 60px;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-}
-.main .tradition__inner .history__slider .year {
-  font-size: 16px;
+  font-size: 30px;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: #FFC999;
-  margin-bottom: 20px;
+  font-family: "Crimson Text", serif;
+  margin-top: 20px;
 }
-.main .tradition__inner .history__slider .achieve {
+
+body > main > section.tradition > div > div > div.left__text > div.left__text-top, body > main > section.tradition > div > div > div.left__text > div.left__text-bottom, body > main > section.tradition > div > div > div.right__text > div.right__text-top, body > main > section.tradition > div > div > div.right__text > div.right__text-bottom {
   color: white;
-  margin-bottom: 20px;
-  font-size: 28px;
-}
-.main .tradition__inner .history__slider p {
-  font-size: 18px;
-  color: #D0D7DF;
-  margin-bottom: 20px;
-}
-.main .tradition__inner .history__slider .left__text {
-  width: 300px;
-}
-.main .tradition__inner .history__slider .left__text .year, .main .tradition__inner .history__slider .left__text .achieve, .main .tradition__inner .history__slider .left__text p {
-  text-align: right;
-}
-.main .tradition__inner .history__slider .right__text {
-  width: 300px;
-}
-.main .tradition__inner .history__slider .right__text .year, .main .tradition__inner .history__slider .right__text .achieve, .main .tradition__inner .history__slider .right__text p {
-  -moz-text-align-last: left;
-       text-align-last: left;
-}
-.main .tradition__inner .history__slider .slider {
-  width: 500px;
-}
-.main .tradition__inner .history__slider .slider img {
-  width: 100%;
-  height: 100%;
-  border-top-left-radius: 50%;
-  border-top-right-radius: 50%;
-}
-.main .menu {
-  margin: 100px 0;
-}
-.main .menu__inner {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-}
-.main .menu__inner .menu__box {
-  width: 20%;
-  height: 300px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  transition: 0.5s ease-out;
-}
-.main .menu__inner .menu__box h3 {
-  display: none;
-}
-.main .menu__inner .menu__box:hover {
-  scale: 1.1;
-  transition: 0.5s ease-out;
-  position: relative;
-  cursor: pointer;
-}
-.main .menu__inner .menu__box:hover h3 {
-  display: block;
-  color: white;
-  position: absolute;
-  bottom: 20px;
-  left: 30px;
-  font-size: 20px;
-  text-transform: uppercase;
-}
-.main .menu__inner .crab {
-  background-image: url(/assets/crab.jpg);
-}
-.main .menu__inner .losos {
-  background-image: url(/assets/losos.jpg);
-}
-.main .menu__inner .plates {
-  background-image: url(/assets/plates.jpg);
-}
-.main .menu__inner .cocktail {
-  background-image: url(/assets/cocktail.jpg);
-}
-.main .reservation {
-  background-image: url(/assets/bg-wine-glass.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  height: 300px;
-  background-size: cover;
-  text-align: center;
-  padding: 100px 0;
-}
-.main .reservation h3 {
-  margin: 0 auto;
-  width: 180px;
-  color: #ffc999;
-  text-transform: uppercase;
-  border-bottom: 1px solid #ffc999;
-}
-.main .reservation h1 {
-  font-size: 58px;
-  text-transform: uppercase;
-  color: white;
-  margin: 40px 0;
-}
-.main .reservation-btn {
-  padding: 15px 25px;
-  border: 1px solid #FFC999;
-  background: linear-gradient(to left, #0E1721 50%, #FFC999 50%) right;
-  background-size: 200%;
-  transition: 0.2s ease-out;
-  color: white;
-}
-.main .reservation-btn:hover {
-  color: black;
-  background-position: left;
-}
-.main .team {
-  margin: 100px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-  padding: 0 200px;
-}
-.main .team__text {
-  width: 100%;
-}
-.main .team__text h3 {
-  width: 135px;
-  color: #ffc999;
-  text-transform: uppercase;
-  border-bottom: 1px solid #ffc999;
-}
-.main .team__text h1 {
-  font-size: 58px;
-  text-transform: uppercase;
-  color: white;
-  margin: 40px 0;
-}
-.main .team__text-icons {
-  display: flex;
-  gap: 30px;
-}
-.main .team__text-icons .facebook .static-icon {
-  display: block;
-}
-.main .team__text-icons .facebook .hover-icon {
-  display: none;
-}
-.main .team__text-icons .facebook:hover .static-icon {
-  display: none;
-}
-.main .team__text-icons .facebook:hover .hover-icon {
-  display: block;
-}
-.main .team__text-icons .twitter .static-icon {
-  display: block;
-}
-.main .team__text-icons .twitter .hover-icon {
-  display: none;
-}
-.main .team__text-icons .twitter:hover .static-icon {
-  display: none;
-}
-.main .team__text-icons .twitter:hover .hover-icon {
-  display: block;
-}
-.main .team__text-icons .instagram .static-icon {
-  display: block;
-}
-.main .team__text-icons .instagram .hover-icon {
-  display: none;
-}
-.main .team__text-icons .instagram:hover .static-icon {
-  display: none;
-}
-.main .team__text-icons .instagram:hover .hover-icon {
-  display: block;
-}
-.main .team__text p {
-  color: #D0D7DF;
-  margin: 20px 0;
-  font-size: 18px;
-}
-.main .team__text-bottom {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 40px;
-  gap: 20px;
-}
-.main .team__text-bottom h2 {
-  color: white;
-  font-size: 28px;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-.main .team__text-bottom ul li {
-  color: white;
-  margin-bottom: 8px;
-  font-size: 18px;
-}
-.main .team__img img {
-  width: 100%;
-  height: 100%;
-  border-top-left-radius: 50%;
-  border-top-right-radius: 50%;
-}
-.main .contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-  background-color: #fff;
-  padding-top: 100px;
-  text-align: center;
-  padding-bottom: 100px;
-}
-.main .contact__form {
-  border: 2px solid #FFC999;
-  padding: 20px;
-  border-radius: 10px;
-  width: 600px;
-}
-.main .contact__form h1 {
-  font-size: 58px;
-  text-transform: uppercase;
-  color: black;
-  margin: 40px 0;
-}
-.main .contact__form p {
-  color: #686868;
-  margin: 20px 0;
-  font-size: 18px;
-}
-.main .contact__form .form {
-  text-align: center;
-}
-.main .contact__form .form #name, .main .contact__form .form #email, .main .contact__form .form textarea {
-  width: 500px;
-  height: 40px;
-  outline: none;
-  border: none;
-  background-color: #FFC999;
-  border-radius: 10px;
+  text-align: left;
   padding: 10px;
-  font-size: 16px;
-}
-.main .contact__form .form-btn {
-  padding: 15px 25px;
-  border: 1px solid #FFC999;
-  background: linear-gradient(to left, #0E1721 50%, #FFC999 50%) right;
-  background-size: 200%;
-  transition: 0.2s ease-out;
-  color: white;
-}
-.main .contact__form .form-btn:hover {
-  color: black;
-  background-position: left;
-  cursor: pointer;
-}
-.main .contact__img img {
-  width: 100%;
-  height: 100%;
-  border-top-left-radius: 50%;
-  border-bottom-right-radius: 50%;
 }
 
-.footer {
-  position: relative;
-  border-top: 1px solid white;
+body > main > section.tradition > div h6 {
+  color: #ffc999;
+  font-size: 12px;
+  font-family: "Manrope", sans-serif;
+  margin-bottom: 15px;
 }
-.footer__inner {
-  position: absolute;
+body > main > section.tradition > div h5 {
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: "Crimson Text", serif;
+  margin-bottom: 15px;
+}
+body > main > section.tradition > div p {
+  color: #D0D7DF;
+  font-size: 15px;
+  font-family: "Manrope", sans-serif;
+  line-height: 20px;
+}
+
+.slider {
+  width: 90%;
+  margin: 50px auto;
+  padding: 0 10px;
+}
+.slider img {
   width: 100%;
-  padding: 30px 0;
-}
-.footer__inner-info {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.footer__inner-info .contacts a {
-  color: white;
-  text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 10px;
-}
-.footer__inner-info .worktime p {
-  text-align: right;
-  margin: 0;
-  margin-bottom: 10px;
-}
-.footer__inner p {
-  text-align: center;
-  color: white;
-  margin-top: 40px;
+  height: 100%;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
 }
 
 .slick-dots {
@@ -432,229 +176,514 @@ header.scrolled {
   color: white;
 }
 
-.menu__title {
-  height: 100vh;
-  padding-top: 85px;
-  background-image: url(/assets/menu-bg.jpg);
+body > main > section.menu {
+  margin: 50px 0;
+}
+
+body > main > section.menu > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+body > main > section.menu > div > div.menu__box {
+  width: 100%;
+}
+body > main > section.menu > div > div.menu__box img {
+  width: 100%;
+}
+body > main > section.menu > div > div.menu__box h3 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-size: 24px;
+  font-family: "Crimson Text", serif;
+  text-transform: uppercase;
+}
+
+body > main > section.menu > div > div.menu__box {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body > main > section.menu > div > div.menu__box.crab {
+  background-image: url(/assets/crab.jpg);
+}
+
+body > main > section.menu > div > div.menu__box.losos {
+  background-image: url(/assets/losos.jpg);
+}
+
+body > main > section.menu > div > div.menu__box.plates {
+  background-image: url(/assets/plates.jpg);
+}
+
+body > main > section.menu > div > div.menu__box.cocktail {
+  background-image: url(/assets/cocktail.jpg);
+}
+
+body > main > section.reservation {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/bg-wine-glass.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
+  height: 320px;
+  display: flex;
 }
-.menu__title-text {
+body > main > section.reservation .reservation__inner {
+  width: 100%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body > main > section.reservation .reservation__inner h3 {
+  color: #ffc999;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ffc999;
+  font-family: "Manrope", sans-serif;
+}
+body > main > section.reservation .reservation__inner h1 {
+  font-size: 30px;
+  line-height: 60px;
+  letter-spacing: 3px;
   color: white;
-  padding-top: 380px;
+  text-transform: uppercase;
+  font-family: "Crimson Text", serif;
 }
-.menu__title-text h3 {
+body > main > section.reservation .reservation__inner .reservation-btn {
+  color: #ffc999;
+  background-color: transparent;
+  text-decoration: none;
+  font-style: italic;
+  font-family: "Crimson Text", serif;
+  padding: 10px 35px;
   font-size: 18px;
-  margin-bottom: 30px;
-}
-.menu__title-text h1 {
-  font-size: 58px;
-  letter-spacing: 1rem;
+  border: 1px solid #ffc999;
 }
 
-.menu__list {
-  width: 1300px;
-  margin: 100px auto;
+body > main > section.team {
+  margin: 50px 0;
+  padding: 0 10px;
 }
-.menu__list h2 {
-  color: #FFC999;
-  line-height: 1.2;
-  font-size: 32px;
-  border-bottom: 1px solid #FFC999;
+
+body > main > section.team > div.team__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body > main > section.team > div.team__img > img {
+  max-width: 600px;
+  max-height: 800px;
+  border-top-left-radius: 48%;
+  border-top-right-radius: 48%;
+}
+
+body > main > section.team > div.team__text {
+  margin: 50px 0;
+}
+body > main > section.team > div.team__text h3 {
+  font-size: 13px;
+  padding-bottom: 5px;
+  color: #ffc999;
   text-transform: uppercase;
+  font-family: "Manrope", sans-serif;
+  border-bottom: 1px solid #ffc999;
+  width: 105px;
+  margin-bottom: 15px;
+}
+body > main > section.team > div.team__text h1 {
+  font-size: 30px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: "Crimson Text", serif;
+  margin-bottom: 15px;
+}
+
+body > main > section.team > div.team__text > div.team__text-icons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+body > main > section.team > div.team__text > div.team__text-icons .static-icon {
+  width: 30px;
+  height: 30px;
+}
+body > main > section.team > div.team__text > div.team__text-icons .hover-icon {
+  display: none;
+}
+
+body > main > section.team > div.team__text > p {
+  color: #D0D7DF;
+  margin-bottom: 30px;
+  font-size: 15px;
+  font-family: "Manrope", sans-serif;
+  line-height: 1.7;
+}
+
+body > main > section.team > div.team__text > div.team__text-bottom {
+  margin: 50px 0;
+}
+body > main > section.team > div.team__text > div.team__text-bottom h2 {
+  font-size: 22px;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Crimson Text", serif;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+body > main > section.team > div.team__text > div.team__text-bottom ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   margin-bottom: 30px;
 }
-.menu__list .starters, .menu__list .main__courses {
+body > main > section.team > div.team__text > div.team__text-bottom ul li {
+  color: #D0D7DF;
+  font-size: 15px;
+  font-family: "Manrope", sans-serif;
+}
+
+body > main > section.contact {
+  margin: 50px 0;
+  padding: 10px;
+}
+body > main > section.contact .contact__form h3 {
+  font-size: 13px;
+  padding-bottom: 5px;
+  color: #ffc999;
+  text-transform: uppercase;
+  font-family: "Manrope", sans-serif;
+  border-bottom: 1px solid #ffc999;
+  width: 105px;
+  margin-bottom: 20px;
+}
+body > main > section.contact .contact__form h1 {
+  font-size: 30px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: "Crimson Text", serif;
+  margin-bottom: 20px;
+}
+body > main > section.contact .contact__form p {
+  color: #D0D7DF;
+  font-size: 15px;
+  line-height: 1.7;
+  font-family: "Manrope", sans-serif;
+  margin-bottom: 20px;
+}
+body > main > section.contact .contact__form .form {
+  width: 100%;
+  margin-bottom: 30px;
+}
+body > main > section.contact .contact__form .form #name, body > main > section.contact .contact__form .form #email, body > main > section.contact .contact__form .form #message {
+  width: 96%;
+  height: 40px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #Dcc999;
+  background-color: transparent;
+  font-size: 16px;
+  font-style: italic;
+  padding-left: 10px;
+  color: white;
+}
+body > main > section.contact .contact__form .form .form-btn {
+  width: 165px;
+  padding: 20px 30px;
+  font-size: 18px;
+  font-style: italic;
+  font-family: "Crimson Text", serif;
+  text-transform: capitalize;
+  border: 1px solid #FFC999;
+  background: linear-gradient(to left, #0E1721 50%, #FFC999 50%) right;
+  background-size: 200%;
+  color: #ffc999;
+  margin-top: 15px;
+}
+body > main > section.contact .contact__img {
+  display: none;
+}
+
+#footer > div {
+  padding: 10px;
+}
+#footer > div .footer__inner-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#footer > div .footer__inner-info .contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+#footer > div .footer__inner-info .contacts a {
+  color: white;
+  text-decoration: none;
+}
+#footer > div .footer__inner-info .worktime {
+  color: white;
+}
+#footer > div .footer__inner-info .worktime p {
+  margin-bottom: 5px;
+}
+#footer > div .copyright {
+  color: #D0D7DF;
+  font-size: 13px;
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+  padding: 50px 0;
+}
+
+body > section.menu__title {
+  background-image: url(assets/menu-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 320px;
+  min-height: 450px;
+  position: relative;
+}
+body > section.menu__title .menu__title-text {
+  position: absolute;
+  right: 0;
+  left: 0;
+  text-align: center;
+  width: 250px;
+  margin: 0 auto;
+  padding-top: 190px;
+  color: white;
+}
+body > section.menu__title .menu__title-text h3 {
+  font-size: 12px;
+  margin-bottom: 10px;
+  font-family: "Manrope", sans-serif;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+body > section.menu__title .menu__title-text h1 {
+  font-size: 38px;
+  font-family: "Crimson Text", serif;
+}
+
+.menu__items {
+  padding: 10px;
+  margin-top: 50px;
+}
+.menu__items .starters h2, .menu__items .main__courses h2 {
+  color: #ffc999;
+  font-size: 26px;
+  font-family: "Crimson Text", serif;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ffc999;
   margin-bottom: 50px;
 }
-.menu__list .starters .dish__items, .menu__list .main__courses .dish__items {
+.menu__items .starters .dish__items-col, .menu__items .main__courses .dish__items-col {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 30px;
 }
-.menu__list .starters .dish__items-col, .menu__list .main__courses .dish__items-col {
-  width: 610px;
-}
-.menu__list .starters .dish__items .dish, .menu__list .main__courses .dish__items .dish {
+.menu__items .starters .dish__items-col .dish, .menu__items .main__courses .dish__items-col .dish {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 40px;
+  gap: 15px;
 }
-.menu__list .starters .dish__items .dish img, .menu__list .main__courses .dish__items .dish img {
+.menu__items .starters .dish__items-col .dish img, .menu__items .main__courses .dish__items-col .dish img {
+  width: 65px;
+  height: 65px;
   border-radius: 50%;
 }
-.menu__list .starters .dish__items .dish__text, .menu__list .main__courses .dish__items .dish__text {
-  width: 440px;
-  padding-left: 30px;
+.menu__items .starters .dish__items-col .dish__text, .menu__items .main__courses .dish__items-col .dish__text {
+  flex-grow: 1;
+}
+.menu__items .starters .dish__items-col .dish__text h3, .menu__items .main__courses .dish__items-col .dish__text h3 {
   color: white;
-}
-.menu__list .starters .dish__items .dish__text h3, .menu__list .main__courses .dish__items .dish__text h3 {
-  font-size: 24px;
+  font-size: 20px;
+  font-family: "Crimson Text", serif;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  letter-spacing: 0.05em;
+  line-height: 1.2;
 }
-.menu__list .starters .dish__items .dish__text p, .menu__list .main__courses .dish__items .dish__text p {
-  font-size: 16px;
+.menu__items .starters .dish__items-col .dish__text p, .menu__items .main__courses .dish__items-col .dish__text p {
+  color: #D0D7DF;
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
   font-style: italic;
+  letter-spacing: 0.05em;
+  line-height: 18px;
 }
-.menu__list .starters .dish__items .dish h5, .menu__list .main__courses .dish__items .dish h5 {
+.menu__items .starters .dish__items-col .dish h5, .menu__items .main__courses .dish__items-col .dish h5 {
+  color: #ffc999;
   font-size: 18px;
-  color: #FFC999;
+  font-family: "Crimson Text", serif;
 }
 
-.about__title {
-  height: 100vh;
-  padding-top: 85px;
-  background-image: url(/assets/about-bg.jpg);
+body > section.about__title {
+  background-image: url(assets/about-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  min-width: 320px;
+  min-height: 450px;
+  position: relative;
 }
-.about__title-text {
+body > section.about__title .about__title-text {
+  position: absolute;
+  right: 0;
+  left: 0;
   text-align: center;
+  width: 250px;
+  margin: 0 auto;
+  padding-top: 190px;
   color: white;
-  padding-top: 380px;
 }
-.about__title-text h3 {
-  font-size: 18px;
-  margin-bottom: 30px;
+body > section.about__title .about__title-text h3 {
+  font-size: 12px;
+  margin-bottom: 10px;
+  font-family: "Manrope", sans-serif;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
-.about__title-text h1 {
-  font-size: 58px;
-  letter-spacing: 1rem;
+body > section.about__title .about__title-text h1 {
+  font-size: 38px;
+  font-family: "Crimson Text", serif;
 }
 
 .history {
-  width: 1300px;
-  margin: 50px auto;
+  margin: 30px 0;
+  padding: 10px;
 }
 .history h1 {
+  font-size: 30px;
   color: white;
-  text-align: center;
   text-transform: uppercase;
-  margin: 0 auto;
-  font-size: 48px;
-  margin-bottom: 100px;
-  letter-spacing: 3px;
-}
-.history .origins, .history .relocation, .history .traditions, .history .celebrity, .history .accalades, .history .sustainability, .history .community {
-  display: flex;
-  gap: 50px;
-  align-items: center;
-  margin-bottom: 100px;
-}
-.history .origins__text, .history .relocation__text, .history .traditions__text, .history .celebrity__text, .history .accalades__text, .history .sustainability__text, .history .community__text {
-  width: 800px;
-}
-.history .origins__text h3, .history .relocation__text h3, .history .traditions__text h3, .history .celebrity__text h3, .history .accalades__text h3, .history .sustainability__text h3, .history .community__text h3 {
-  color: #FFC999;
-  line-height: 1.2;
-  font-size: 32px;
-  border-bottom: 1px solid #FFC999;
-  text-transform: uppercase;
+  letter-spacing: 0.05em;
   margin-bottom: 30px;
 }
-.history .origins__text p, .history .relocation__text p, .history .traditions__text p, .history .celebrity__text p, .history .accalades__text p, .history .sustainability__text p, .history .community__text p {
-  color: white;
-  font-size: 24px;
-  margin-bottom: 80px;
+.history .origins,
+.history .relocation,
+.history .traditions,
+.history .celebrity,
+.history .accalades,
+.history .sustainability,
+.history .community {
+  margin-bottom: 50px;
 }
-.history .origins .origins-bg, .history .relocation .origins-bg, .history .traditions .origins-bg, .history .celebrity .origins-bg, .history .accalades .origins-bg, .history .sustainability .origins-bg, .history .community .origins-bg {
-  border-bottom-right-radius: 30px;
-  border-top-left-radius: 30px;
-  width: 400px;
+.history .origins__text,
+.history .relocation__text,
+.history .traditions__text,
+.history .celebrity__text,
+.history .accalades__text,
+.history .sustainability__text,
+.history .community__text {
+  margin: 15px 0;
+}
+.history .origins__text h3,
+.history .relocation__text h3,
+.history .traditions__text h3,
+.history .celebrity__text h3,
+.history .accalades__text h3,
+.history .sustainability__text h3,
+.history .community__text h3 {
+  color: #FFC999;
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-family: "Crimson Text", serif;
+  border-bottom: 1px solid #ffc999;
+}
+.history .origins__text p,
+.history .relocation__text p,
+.history .traditions__text p,
+.history .celebrity__text p,
+.history .accalades__text p,
+.history .sustainability__text p,
+.history .community__text p {
+  color: #D0D7DF;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: "Manrope", sans-serif;
+}
+.history .origins-bg,
+.history .relocation-bg,
+.history .traditions-bg,
+.history .celebrity-bg,
+.history .accalades-bg,
+.history .sustainability-bg,
+.history .community-bg {
+  max-width: 400px;
   height: 300px;
-  background-image: url(/assets/origins.jpg);
-  background-position: center;
+  margin: 0 auto;
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 }
-.history .origins .relocation-bg, .history .relocation .relocation-bg, .history .traditions .relocation-bg, .history .celebrity .relocation-bg, .history .accalades .relocation-bg, .history .sustainability .relocation-bg, .history .community .relocation-bg {
-  border-bottom-right-radius: 30px;
-  border-top-left-radius: 30px;
-  width: 400px;
-  height: 300px;
-  background-image: url(/assets/relocation.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.history .origins-bg {
+  background-image: url(assets/origins.jpg);
 }
-.history .origins .traditions-bg, .history .relocation .traditions-bg, .history .traditions .traditions-bg, .history .celebrity .traditions-bg, .history .accalades .traditions-bg, .history .sustainability .traditions-bg, .history .community .traditions-bg {
-  border-bottom-right-radius: 30px;
-  border-top-left-radius: 30px;
-  width: 400px;
-  height: 300px;
-  background-image: url(/assets/TRADITIONS.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.history .relocation-bg {
+  background-image: url(assets/relocation.jpg);
 }
-.history .origins .celebrity-bg, .history .relocation .celebrity-bg, .history .traditions .celebrity-bg, .history .celebrity .celebrity-bg, .history .accalades .celebrity-bg, .history .sustainability .celebrity-bg, .history .community .celebrity-bg {
-  border-bottom-right-radius: 30px;
-  border-top-left-radius: 30px;
-  width: 400px;
-  height: 300px;
-  background-image: url(/assets/CELEBRITY.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.history .traditions-bg {
+  background-image: url(assets/TRADITIONS.jpg);
 }
-.history .origins .accalades-bg, .history .relocation .accalades-bg, .history .traditions .accalades-bg, .history .celebrity .accalades-bg, .history .accalades .accalades-bg, .history .sustainability .accalades-bg, .history .community .accalades-bg {
-  border-bottom-right-radius: 30px;
-  border-top-left-radius: 30px;
-  width: 400px;
-  height: 300px;
-  background-image: url(/assets/ACCOLADES.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.history .celebrity-bg {
+  background-image: url(assets/CELEBRITY.jpg);
 }
-.history .origins .sustainability-bg, .history .relocation .sustainability-bg, .history .traditions .sustainability-bg, .history .celebrity .sustainability-bg, .history .accalades .sustainability-bg, .history .sustainability .sustainability-bg, .history .community .sustainability-bg {
-  border-bottom-right-radius: 30px;
-  border-top-left-radius: 30px;
-  width: 400px;
-  height: 300px;
-  background-image: url(/assets/SUSTAINABILITY.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.history .accalades-bg {
+  background-image: url(assets/ACCOLADES.jpg);
 }
-.history .origins .community-bg, .history .relocation .community-bg, .history .traditions .community-bg, .history .celebrity .community-bg, .history .accalades .community-bg, .history .sustainability .community-bg, .history .community .community-bg {
-  border-bottom-right-radius: 30px;
-  border-top-left-radius: 30px;
-  width: 400px;
-  height: 300px;
-  background-image: url(/assets/community.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.history .sustainability-bg {
+  background-image: url(assets/SUSTAINABILITY.jpg);
+}
+.history .community-bg {
+  background-image: url(assets/community.jpg);
 }
 
-.mission {
-  margin-bottom: 100px;
-}
 .mission .slider {
-  width: 1300px;
+  width: 90%;
   height: auto;
-  margin: 100px auto;
-  position: relative;
+  margin: 50px auto;
 }
 .mission .slider h1 {
-  position: absolute;
-  bottom: 100px;
-  left: 30px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
   color: white;
-  font-size: 40px;
+  font-family: "Crimson Text", serif;
 }
 .mission .slider p {
-  width: 400px;
-  position: absolute;
-  bottom: 15px;
-  left: 30px;
   color: white;
-  font-size: 18px;
+  font-family: "Manrope", sans-serif;
+  font-size: 12px;
+  line-height: 15px;
+}
+.mission .slider .slide {
+  text-align: center;
+  padding: 25px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-end;
 }
 .mission .slider .slide1 {
   width: 500px;
@@ -694,65 +723,86 @@ header.scrolled {
 }
 
 .workers {
-  margin-bottom: 100px;
+  text-align: center;
 }
-.workers__list {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+.workers span {
+  font-family: "Manrope", sans-serif;
+  color: #ffc999;
+  font-size: 20px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ffc999;
+  text-transform: uppercase;
+}
+.workers h2 {
+  color: white;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: "Crimson Text", serif;
+  margin: 20px 0;
 }
 .workers__list-item {
-  width: 25%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 60px;
+  max-width: 370px;
+  max-height: 560px;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 .workers__list-item img {
-  width: 300px;
-  height: 400px;
-  border-top-right-radius: 45%;
-  border-top-left-radius: 45%;
-  margin-bottom: 20px;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 47%;
+  border-top-right-radius: 47%;
+  margin-bottom: 30px;
 }
 .workers__list-item h4 {
   color: #FFC999;
-  font-size: 16px;
+  font-size: 12px;
   margin-bottom: 10px;
+  text-align: left;
 }
 .workers__list-item h2 {
   color: white;
-  font-size: 28px;
+  font-size: 22px;
+  text-align: left;
 }
 
-.contact__title {
-  height: 100vh;
-  padding-top: 85px;
-  background-image: url(/assets/contact-bg.jpg);
+body > section.contact__title {
+  background-image: url(assets/contact-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  min-width: 320px;
+  min-height: 450px;
+  position: relative;
 }
-.contact__title-text {
+body > section.contact__title .contact__title-text {
+  position: absolute;
+  right: 0;
+  left: 0;
   text-align: center;
+  width: 250px;
+  margin: 0 auto;
+  padding-top: 190px;
   color: white;
-  padding-top: 380px;
 }
-.contact__title-text h3 {
-  font-size: 18px;
-  margin-bottom: 30px;
+body > section.contact__title .contact__title-text h3 {
+  font-size: 12px;
+  margin-bottom: 10px;
+  font-family: "Manrope", sans-serif;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
-.contact__title-text h1 {
-  font-size: 58px;
-  letter-spacing: 1rem;
+body > section.contact__title .contact__title-text h1 {
+  font-size: 38px;
+  font-family: "Crimson Text", serif;
 }
 
 .contact__us {
-  width: 1300px;
-  margin: 100px auto;
-  display: flex;
-  justify-content: space-between;
-  gap: 150px;
+  padding: 10px;
+}
+.contact__us-info {
+  margin-top: 50px;
 }
 .contact__us-info .address, .contact__us-info .phone, .contact__us-info .hours {
   display: flex;
@@ -762,12 +812,16 @@ header.scrolled {
   color: white;
 }
 .contact__us-info .address h2, .contact__us-info .phone h2, .contact__us-info .hours h2 {
-  font-size: 28px;
+  font-size: 16px;
   text-transform: uppercase;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+}
+.contact__us-info .address p, .contact__us-info .phone p, .contact__us-info .hours p {
+  font-size: 12px;
+  margin-bottom: 10px;
 }
 .contact__us-info .address a, .contact__us-info .phone a, .contact__us-info .hours a {
-  font-size: 20px;
+  font-size: 16px;
   color: #FFC999;
   text-decoration: none;
   font-style: italic;
@@ -786,234 +840,1938 @@ header.scrolled {
 .contact__us-info .address a:hover:before, .contact__us-info .phone a:hover:before, .contact__us-info .hours a:hover:before {
   width: 100%;
 }
-.contact__us-info .address p, .contact__us-info .phone p, .contact__us-info .hours p {
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-.contact__us-form {
-  flex-grow: 1;
-  padding: 0 30px;
-}
-.contact__us-form .form #name {
+.contact__us-form .form {
   width: 100%;
-  border: none;
-  background-color: transparent;
-  border-bottom: 1px solid white;
-  padding: 10px 0;
-  color: white;
-  padding: 15px;
-  font-size: 16px;
+  margin-bottom: 30px;
 }
-.contact__us-form .form #email {
-  width: 100%;
+.contact__us-form .form #name, .contact__us-form .form #email, .contact__us-form .form #message {
+  width: 96%;
+  height: 40px;
+  outline: none;
   border: none;
+  border-bottom: 1px solid #Dcc999;
   background-color: transparent;
-  border-bottom: 1px solid white;
-  padding: 10px 0;
-  color: white;
-  padding: 15px;
   font-size: 16px;
-}
-.contact__us-form .form #message {
-  width: 100%;
-  border: none;
-  background-color: transparent;
-  border-bottom: 1px solid white;
-  padding: 10px 0;
+  font-style: italic;
+  padding-left: 10px;
   color: white;
-  padding: 15px;
-  font-size: 16px;
 }
 .contact__us-form .form .form-btn {
+  width: 165px;
   padding: 20px 30px;
-  font-size: 16px;
-  cursor: pointer;
+  font-size: 18px;
   font-style: italic;
-  text-transform: uppercase;
+  font-family: "Crimson Text", serif;
+  text-transform: capitalize;
   border: 1px solid #FFC999;
   background: linear-gradient(to left, #0E1721 50%, #FFC999 50%) right;
   background-size: 200%;
-  transition: 0.2s ease-out;
   color: #ffc999;
-  margin-top: 50px;
-}
-.contact__us-form .form .form-btn:hover {
-  color: black;
-  background-position: left;
+  margin-top: 15px;
 }
 
 .map {
   width: 100%;
-  height: 400px;
-  margin-bottom: 100px;
+  height: 300px;
+  margin-bottom: 50px;
 }
 
-#reservation-btn {
-  padding: 15px 25px;
-  border: 1px solid #FFC999;
-  background: linear-gradient(to left, rgba(14, 23, 33, 0) 50%, #FFC999 50%) right;
-  background-size: 200%;
-  color: #FFC999;
-  transition: 0.2s ease-out;
-}
-
-#reservation-btn:hover {
-  color: black;
-  background-position: left;
-  cursor: pointer;
-}
-
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.modal-content {
-  background-color: rgba(46, 46, 46, 0.8980392157);
-  margin: 15% auto;
-  padding: 50px;
-  border: 1px solid #888;
-  width: 30%;
-  position: relative;
-  border-radius: 10px;
-}
-
-.close {
-  position: absolute;
-  color: #aaa;
-  right: 20px;
-  top: 15px;
-  font-size: 28px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.close:hover,
-.close:focus {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  cursor: pointer;
-}
-
-@media (max-width: 1024px) {
-  .slider.slick-initialized.slick-slider.slick-dotted {
-    display: none;
-  }
-}
-@media (max-width: 768px) {
-  .history__slider {
-    display: flex;
-    flex-direction: column;
-  }
-  .history__slider .left__text-top {
-    text-align: center;
-  }
-  .history__slider .left__text-top p {
-    width: 100%;
-    text-align: center;
-  }
-  video {
-    display: none;
-  }
-  .menu {
-    margin-bottom: 100px;
-  }
-  .menu__inner {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .main .menu__inner .menu__box {
-    width: 50%;
-    margin-bottom: 50px;
+@media (min-width: 768px) {
+  .video {
+    padding: 300px 0;
+    background-color: #8B96A6;
+    overflow: hidden;
     position: relative;
   }
-  .main .menu__inner .menu__box h3 {
-    display: block;
-    color: white;
+  .video__clip {
     position: absolute;
-    bottom: 20px;
-    left: 30px;
-    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    z-index: 0;
+    width: 1938px;
+    transform: translate(-50%, -50%);
+    opacity: 0.5;
+  }
+  .video__clip-title {
+    font-size: 70px;
+    color: white;
+    text-align: center;
+    position: relative;
+  }
+  .video__clip-title .post-subtitle {
+    font-size: 12px;
+    font-family: "Manrope", sans-serif;
     text-transform: uppercase;
   }
-  .main .tradition__inner .history__slider .left__text .year, .main .tradition__inner .history__slider .left__text .achieve, .main .tradition__inner .history__slider .left__text p {
+  .video__clip-title .post-title {
+    width: 400px;
+    margin: 20px auto;
+    font-family: "Crimson Text", serif;
+    font-size: 55px;
+  }
+  .video__clip-title .find-more__btn {
+    color: white;
+    text-decoration: none;
+    font-style: italic;
+    font-family: "Crimson Text", serif;
+    padding: 10px 35px;
+    font-size: 18px;
+    border: 1px solid white;
+  }
+  body > main > section.team > div.team__img > img {
+    width: 100%;
+  }
+  body > main > section.contact > div.contact__img > img {
+    width: 100%;
+  }
+  #myModal > div > div > form {
+    display: block;
+  }
+  #header > div > .nav {
+    display: none;
+  }
+  .header {
+    position: fixed;
+    margin: 0 auto;
+    width: 100%;
+    z-index: 1;
+    background-color: transparent;
+    transition: background-color 0.5s ease;
+    padding: 15px 0;
+  }
+  .header__inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .header .logo img {
+    width: 200px;
+    height: 50px;
+  }
+  header.scrolled {
+    background-color: #0E1721;
+    border-bottom: 1px solid white;
+  }
+  #footer > div > div > div.logo > a > img {
+    width: 150px;
+  }
+  #header > div > a > img {
+    width: 150px;
+  }
+  body > main {
+    margin: 50px 0;
+  }
+  body > main > section.tradition {
     text-align: center;
   }
-  .main .tradition__inner .history__slider .right__text .year, .main .tradition__inner .history__slider .right__text .achieve, .main .tradition__inner .history__slider .right__text p {
-    -moz-text-align-last: center;
-         text-align-last: center;
+  body > main > section.tradition > div > span {
+    font-family: "Manrope", sans-serif;
+    color: #ffc999;
+    font-size: 13px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ffc999;
+    text-transform: uppercase;
+    letter-spacing: 2px;
   }
-  .main .team {
-    margin: 100px 0;
+  body > main > section.tradition > div > h2 {
+    color: white;
+    font-size: 33px;
+    text-transform: uppercase;
+    font-family: "Crimson Text", serif;
+    margin-top: 20px;
+  }
+  body > main > section.tradition > div > div > div.left__text > div.left__text-top, body > main > section.tradition > div > div > div.left__text > div.left__text-bottom, body > main > section.tradition > div > div > div.right__text > div.right__text-top, body > main > section.tradition > div > div > div.right__text > div.right__text-bottom {
+    color: white;
+    text-align: left;
+    padding: 10px;
+  }
+  body > main > section.tradition > div h6 {
+    color: #ffc999;
+    font-size: 12px;
+    font-family: "Manrope", sans-serif;
+    margin-bottom: 15px;
+  }
+  body > main > section.tradition > div h5 {
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: "Crimson Text", serif;
+    margin-bottom: 15px;
+  }
+  body > main > section.tradition > div p {
+    color: #D0D7DF;
+    font-size: 15px;
+    font-family: "Manrope", sans-serif;
+    line-height: 25px;
+  }
+  .slider {
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 0 10px;
+  }
+  .slider img {
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+  }
+  .slick-dots {
+    margin-bottom: 30px;
+  }
+  .slick-dots li button {
+    scale: 1.5;
+  }
+  .slick-dots li.slick-active button:before {
+    opacity: 0.75;
+    color: white;
+  }
+  body > main > section.menu {
+    margin: 50px 0;
+  }
+  body > main > section.menu > div {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
-    gap: 100px;
-    flex-direction: column;
-    padding: 0 15px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
-  .main .team img {
-    margin: 0 auto;
+  body > main > section.menu > div > div.menu__box {
+    width: 50%;
+  }
+  body > main > section.menu > div > div.menu__box img {
+    width: 50%;
+  }
+  body > main > section.menu > div > div.menu__box h3 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-size: 24px;
+    font-family: "Crimson Text", serif;
+    text-transform: uppercase;
+  }
+  body > main > section.menu > div > div.menu__box {
+    position: relative;
+    width: 45%;
+    height: 320px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  body > main > section.menu > div > div.menu__box.crab {
+    background-image: url(/assets/crab.jpg);
+  }
+  body > main > section.menu > div > div.menu__box.losos {
+    background-image: url(/assets/losos.jpg);
+  }
+  body > main > section.menu > div > div.menu__box.plates {
+    background-image: url(/assets/plates.jpg);
+  }
+  body > main > section.menu > div > div.menu__box.cocktail {
+    background-image: url(/assets/cocktail.jpg);
+  }
+  body > main > section.reservation {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/bg-wine-glass.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 320px;
+    display: flex;
+  }
+  body > main > section.reservation .reservation__inner {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  body > main > section.reservation .reservation__inner h3 {
+    color: #ffc999;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ffc999;
+    font-family: "Manrope", sans-serif;
+  }
+  body > main > section.reservation .reservation__inner h1 {
+    font-size: 30px;
+    line-height: 60px;
+    letter-spacing: 3px;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Crimson Text", serif;
+  }
+  body > main > section.reservation .reservation__inner .reservation-btn {
+    color: #ffc999;
+    background-color: transparent;
+    text-decoration: none;
+    font-style: italic;
+    font-family: "Crimson Text", serif;
+    padding: 10px 35px;
+    font-size: 18px;
+    border: 1px solid #ffc999;
+  }
+  body > main > section.team {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 0 10px;
   }
   body > main > section.team > div.team__img {
-    width: 50%;
-    height: 50%;
-  }
-  .main .contact__img img {
-    display: none;
-  }
-  .main .contact {
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
-    margin: 0 auto;
-    background-color: #fff;
-    padding-top: 100px;
-    text-align: center;
-    padding-bottom: 100px;
+    justify-content: center;
   }
-  .main .contact__form {
-    margin: 0 auto;
-    width: 450px;
+  body > main > section.team > div.team__img > img {
+    width: 300px;
+    height: 400px;
+    border-top-left-radius: 48%;
+    border-top-right-radius: 48%;
   }
-  .main .contact__form .form #name, .main .contact__form .form #email, .main .contact__form .form textarea {
-    width: 430px;
+  body > main > section.team > div.team__text {
+    margin: 0;
   }
-  .main .team__text {
-    width: 90%;
+  body > main > section.team > div.team__text h3 {
+    font-size: 13px;
+    padding-bottom: 5px;
+    color: #ffc999;
+    text-transform: uppercase;
+    font-family: "Manrope", sans-serif;
+    border-bottom: 1px solid #ffc999;
+    width: 105px;
+    margin-bottom: 15px;
   }
-  .footer__inner img {
-    width: 100px;
+  body > main > section.team > div.team__text h1 {
+    font-size: 30px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: "Crimson Text", serif;
+    margin-bottom: 15px;
   }
-  .nav {
+  body > main > section.team > div.team__text > div.team__text-icons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+  body > main > section.team > div.team__text > div.team__text-icons .static-icon {
+    width: 30px;
+    height: 30px;
+  }
+  body > main > section.team > div.team__text > div.team__text-icons .hover-icon {
     display: none;
+  }
+  body > main > section.team > div.team__text > p {
+    color: #D0D7DF;
+    margin-bottom: 30px;
+    font-size: 15px;
+    font-family: "Manrope", sans-serif;
+    line-height: 1.7;
+  }
+  body > main > section.team > div.team__text > div.team__text-bottom {
+    margin: 50px 0;
+    display: flex;
+    gap: 50px;
+  }
+  body > main > section.team > div.team__text > div.team__text-bottom h2 {
+    font-size: 22px;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Crimson Text", serif;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+  }
+  body > main > section.team > div.team__text > div.team__text-bottom ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  body > main > section.team > div.team__text > div.team__text-bottom ul li {
+    color: #D0D7DF;
+    font-size: 15px;
+    font-family: "Manrope", sans-serif;
+    line-height: 22px;
+  }
+  body > main > section.contact {
+    margin: 50px 0;
+    padding: 10px;
+    text-align: center;
+  }
+  body > main > section.contact .contact__form h3 {
+    font-size: 13px;
+    padding-bottom: 5px;
+    color: #ffc999;
+    text-transform: uppercase;
+    font-family: "Manrope", sans-serif;
+    border-bottom: 1px solid #ffc999;
+    width: 125px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+  }
+  body > main > section.contact .contact__form h1 {
+    font-size: 36px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: "Crimson Text", serif;
+    margin-bottom: 20px;
+  }
+  body > main > section.contact .contact__form p {
+    width: 500px;
+    margin: 0 auto;
+    color: #D0D7DF;
+    font-size: 15px;
+    line-height: 1.7;
+    font-family: "Manrope", sans-serif;
+    margin-bottom: 30px;
+  }
+  body > main > section.contact .contact__form .form {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  body > main > section.contact .contact__form .form #name, body > main > section.contact .contact__form .form #email, body > main > section.contact .contact__form .form #message {
+    width: 96%;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #Dcc999;
+    background-color: transparent;
+    font-size: 16px;
+    font-style: italic;
+    padding-left: 10px;
+    color: white;
+  }
+  body > main > section.contact .contact__form .form .form-btn {
+    width: 165px;
+    padding: 20px 30px;
+    font-size: 18px;
+    font-style: italic;
+    font-family: "Crimson Text", serif;
+    text-transform: capitalize;
+    border: 1px solid #FFC999;
+    background: linear-gradient(to left, #0E1721 50%, #FFC999 50%) right;
+    background-size: 200%;
+    color: #ffc999;
+    margin-top: 15px;
+  }
+  body > main > section.contact .contact__img {
+    display: none;
+  }
+  #footer > div {
+    padding: 10px;
+  }
+  #footer > div .footer__inner-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+  }
+  #footer > div .footer__inner-info .contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 0;
+  }
+  #footer > div .footer__inner-info .contacts a {
+    color: white;
+    text-decoration: none;
+  }
+  #footer > div .footer__inner-info .worktime {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  #footer > div .footer__inner-info .worktime p {
+    margin: 0;
+  }
+  #footer > div .copyright {
+    color: #D0D7DF;
+    font-size: 13px;
+    text-align: center;
+    font-family: "Manrope", sans-serif;
+    padding: 50px 0;
+  }
+  body > section.menu__title {
+    background-image: url(assets/menu-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 750px;
+    min-height: 850px;
+    position: relative;
+  }
+  body > section.menu__title .menu__title-text {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 395px;
+    color: white;
+  }
+  body > section.menu__title .menu__title-text h3 {
+    font-size: 12px;
+    margin-bottom: 10px;
+    font-family: "Manrope", sans-serif;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  body > section.menu__title .menu__title-text h1 {
+    font-size: 55px;
+    font-family: "Crimson Text", serif;
+    line-height: 1.2;
+  }
+  .menu__items {
+    padding: 10px;
+    margin-top: 50px;
+  }
+  .menu__items .starters h2, .menu__items .main__courses h2 {
+    color: #ffc999;
+    font-size: 26px;
+    font-family: "Crimson Text", serif;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ffc999;
+    margin-bottom: 50px;
+  }
+  .menu__items .starters .dish__items, .menu__items .main__courses .dish__items {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  .menu__items .starters .dish__items-col, .menu__items .main__courses .dish__items-col {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  .menu__items .starters .dish__items-col .dish, .menu__items .main__courses .dish__items-col .dish {
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  .menu__items .starters .dish__items-col .dish img, .menu__items .main__courses .dish__items-col .dish img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+  }
+  .menu__items .starters .dish__items-col .dish__text, .menu__items .main__courses .dish__items-col .dish__text {
+    flex-grow: 1;
+  }
+  .menu__items .starters .dish__items-col .dish__text h3, .menu__items .main__courses .dish__items-col .dish__text h3 {
+    color: white;
+    font-size: 20px;
+    font-family: "Crimson Text", serif;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 0.05em;
+    line-height: 1.2;
+  }
+  .menu__items .starters .dish__items-col .dish__text p, .menu__items .main__courses .dish__items-col .dish__text p {
+    color: #D0D7DF;
+    font-family: "Manrope", sans-serif;
+    font-size: 13px;
+    font-style: italic;
+    letter-spacing: 0.05em;
+    line-height: 18px;
+  }
+  .menu__items .starters .dish__items-col .dish h5, .menu__items .main__courses .dish__items-col .dish h5 {
+    color: #ffc999;
+    font-size: 18px;
+    font-family: "Crimson Text", serif;
+  }
+  body > section.about__title {
+    background-image: url(assets/about-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 320px;
+    min-height: 450px;
+    position: relative;
+  }
+  body > section.about__title .about__title-text {
+    position: absolute;
+    right: 0;
+    left: 0;
+    text-align: center;
+    width: 250px;
+    margin: 0 auto;
+    padding-top: 190px;
+    color: white;
+  }
+  body > section.about__title .about__title-text h3 {
+    font-size: 12px;
+    margin-bottom: 10px;
+    font-family: "Manrope", sans-serif;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  body > section.about__title .about__title-text h1 {
+    font-size: 47px;
+    font-family: "Crimson Text", serif;
+  }
+  .history {
+    margin: 30px 0;
+    padding: 10px;
+  }
+  .history h1 {
+    text-align: center;
+    font-size: 33px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 30px;
+  }
+  .history .origins,
+  .history .relocation,
+  .history .traditions,
+  .history .celebrity,
+  .history .accalades,
+  .history .sustainability,
+  .history .community {
+    margin-bottom: 50px;
+  }
+  .history .origins__text,
+  .history .relocation__text,
+  .history .traditions__text,
+  .history .celebrity__text,
+  .history .accalades__text,
+  .history .sustainability__text,
+  .history .community__text {
+    margin: 30px 0;
+  }
+  .history .origins__text h3,
+  .history .relocation__text h3,
+  .history .traditions__text h3,
+  .history .celebrity__text h3,
+  .history .accalades__text h3,
+  .history .sustainability__text h3,
+  .history .community__text h3 {
+    color: #FFC999;
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-family: "Crimson Text", serif;
+    border-bottom: 1px solid #ffc999;
+  }
+  .history .origins__text p,
+  .history .relocation__text p,
+  .history .traditions__text p,
+  .history .celebrity__text p,
+  .history .accalades__text p,
+  .history .sustainability__text p,
+  .history .community__text p {
+    color: #D0D7DF;
+    font-size: 15px;
+    line-height: 18px;
+    font-family: "Manrope", sans-serif;
+  }
+  .history .origins-bg,
+  .history .relocation-bg,
+  .history .traditions-bg,
+  .history .celebrity-bg,
+  .history .accalades-bg,
+  .history .sustainability-bg,
+  .history .community-bg {
+    max-width: 400px;
+    height: 300px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .history .origins-bg {
+    background-image: url(assets/origins.jpg);
+  }
+  .history .relocation-bg {
+    background-image: url(assets/relocation.jpg);
+  }
+  .history .traditions-bg {
+    background-image: url(assets/TRADITIONS.jpg);
+  }
+  .history .celebrity-bg {
+    background-image: url(assets/CELEBRITY.jpg);
+  }
+  .history .accalades-bg {
+    background-image: url(assets/ACCOLADES.jpg);
+  }
+  .history .sustainability-bg {
+    background-image: url(assets/SUSTAINABILITY.jpg);
+  }
+  .history .community-bg {
+    background-image: url(assets/community.jpg);
+  }
+  .mission .slider {
+    width: 90%;
+    height: auto;
+    margin: 50px auto;
+  }
+  .mission .slider h1 {
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: white;
+    font-family: "Crimson Text", serif;
+  }
+  .mission .slider p {
+    color: white;
+    font-family: "Manrope", sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .mission .slider .slide {
+    text-align: center;
+    padding: 25px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .mission .slider .slide1 {
+    width: 500px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.7)), url("/assets/slide1.jpg");
+    background-position: bottom;
+    border-radius: 20px;
+  }
+  .mission .slider .slide2 {
+    width: 500px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.7)), url("/assets/slide2.jpg");
+    background-position: bottom;
+    border-radius: 20px;
+  }
+  .mission .slider .slide3 {
+    width: 500px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.7)), url("/assets/slide3.jpg");
+    background-position: bottom;
+    border-radius: 20px;
+  }
+  .mission .slider .slide4 {
+    width: 500px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.7)), url("/assets/slide4.webp");
+    background-position: bottom;
+    border-radius: 20px;
+  }
+  .workers {
+    text-align: center;
+  }
+  .workers span {
+    font-family: "Manrope", sans-serif;
+    color: #ffc999;
+    font-size: 23px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ffc999;
+    text-transform: uppercase;
+  }
+  .workers h2 {
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: "Crimson Text", serif;
+    margin: 30px 0;
+  }
+  .workers__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .workers__list-item {
+    width: 30%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .workers__list-item img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 47%;
+    border-top-right-radius: 47%;
+    margin-bottom: 30px;
+  }
+  .workers__list-item h4 {
+    color: #FFC999;
+    font-size: 12px;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  .workers__list-item h2 {
+    color: white;
+    font-size: 22px;
+    text-align: left;
+  }
+  body > section.contact__title {
+    background-image: url(assets/contact-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 320px;
+    min-height: 450px;
+    position: relative;
+  }
+  body > section.contact__title .contact__title-text {
+    position: absolute;
+    right: 0;
+    left: 0;
+    text-align: center;
+    width: 250px;
+    margin: 0 auto;
+    padding-top: 190px;
+    color: white;
+  }
+  body > section.contact__title .contact__title-text h3 {
+    font-size: 12px;
+    margin-bottom: 10px;
+    font-family: "Manrope", sans-serif;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  body > section.contact__title .contact__title-text h1 {
+    font-size: 38px;
+    font-family: "Crimson Text", serif;
+  }
+  .contact__us {
+    padding: 10px;
+  }
+  .contact__us-info {
+    margin-top: 50px;
+  }
+  .contact__us-info .address, .contact__us-info .phone, .contact__us-info .hours {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    margin-bottom: 50px;
+    color: white;
+  }
+  .contact__us-info .address h2, .contact__us-info .phone h2, .contact__us-info .hours h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .contact__us-info .address p, .contact__us-info .phone p, .contact__us-info .hours p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .contact__us-info .address a, .contact__us-info .phone a, .contact__us-info .hours a {
+    font-size: 18px;
+    color: #FFC999;
+    text-decoration: none;
+    font-style: italic;
+    position: relative;
+  }
+  .contact__us-info .address a::before, .contact__us-info .phone a::before, .contact__us-info .hours a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #FFC999;
+    transition: width 0.35s;
+  }
+  .contact__us-info .address a:hover:before, .contact__us-info .phone a:hover:before, .contact__us-info .hours a:hover:before {
+    width: 100%;
+  }
+  .contact__us-form {
+    width: 500px;
+    margin: 0 auto;
+  }
+  .contact__us-form .form {
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .contact__us-form .form #name, .contact__us-form .form #email, .contact__us-form .form #message {
+    width: 96%;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #Dcc999;
+    background-color: transparent;
+    font-size: 16px;
+    font-style: italic;
+    padding-left: 10px;
+    color: white;
+  }
+  .contact__us-form .form .form-btn {
+    width: 165px;
+    padding: 20px 30px;
+    font-size: 18px;
+    font-style: italic;
+    font-family: "Crimson Text", serif;
+    text-transform: capitalize;
+    border: 1px solid #FFC999;
+    background: linear-gradient(to left, #0E1721 50%, #FFC999 50%) right;
+    background-size: 200%;
+    color: #ffc999;
+    margin-top: 15px;
+  }
+  .map {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 50px;
   }
 }
-@media (max-width: 768px) {
-  .mobile__menu {
-    display: block;
+@media (min-width: 1024px) {
+  .video {
+    padding: 300px 0;
+    background-color: #8B96A6;
+    overflow: hidden;
+    position: relative;
   }
-  .menu__aside {
+  .video__clip {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 0;
+    width: 1938px;
+    transform: translate(-50%, -50%);
+    opacity: 0.5;
+  }
+  .video__clip-title {
+    font-size: 70px;
+    color: white;
+    text-align: center;
+    position: relative;
+  }
+  .video__clip-title .post-subtitle {
+    font-size: 12px;
+    font-family: "Manrope", sans-serif;
+    text-transform: uppercase;
+  }
+  .video__clip-title .post-title {
+    width: 900px;
+    margin: 20px auto;
+    font-family: "Crimson Text", serif;
+    font-size: 72px;
+  }
+  .video__clip-title .find-more__btn {
+    color: white;
+    text-decoration: none;
+    font-style: italic;
+    font-family: "Crimson Text", serif;
+    padding: 10px 35px;
+    font-size: 18px;
+    border: 1px solid white;
+  }
+  #reservation-btn {
+    padding: 15px 25px;
+    border: 1px solid #FFC999;
+    background: linear-gradient(to left, rgba(14, 23, 33, 0) 50%, #FFC999 50%) right;
+    background-size: 200%;
+    color: #FFC999;
+    transition: 0.2s ease-out;
+    font-size: 18px;
+    font-family: "Crimson Text", serif;
+  }
+  #reservation-btn:hover {
+    color: black;
+    background-position: left;
+    cursor: pointer;
+  }
+  .modal {
+    display: none;
     position: fixed;
-    top: 83px;
+    z-index: 1;
     left: 0;
+    top: 0;
     width: 100%;
-    background-color: #FFC999;
-    padding: 20px;
-    transition: all 0.3s ease;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
   }
-  .menu-icon {
+  .modal-content {
+    background-color: rgba(46, 46, 46, 0.8980392157);
+    margin: 15% auto;
+    padding: 50px;
+    border: 1px solid #888;
+    width: 30%;
+    position: relative;
+    border-radius: 10px;
+  }
+  .close {
+    position: absolute;
+    color: #aaa;
+    right: 20px;
+    top: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .close:hover,
+  .close:focus {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  #myModal > div > div {
+    flex-grow: 1;
+    padding: 0;
+  }
+  #myModal > div > div .form #name {
+    width: 90%;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    padding: 10px 0;
+    color: white;
+    padding: 15px;
+    font-size: 16px;
+  }
+  #myModal > div > div .form #email {
+    width: 90%;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    padding: 10px 0;
+    color: white;
+    padding: 15px;
+    font-size: 16px;
+  }
+  #myModal > div > div .form #message {
+    width: 90%;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    padding: 10px 0;
+    color: white;
+    padding: 15px;
+    font-size: 16px;
+  }
+  #myModal > div > div .form .form-btn {
+    padding: 20px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    font-style: italic;
+    text-transform: uppercase;
+    border: 1px solid #FFC999;
+    background: linear-gradient(to left, #0E1721 50%, #FFC999 50%) right;
+    background-size: 200%;
+    transition: 0.2s ease-out;
+    color: #ffc999;
+    margin-top: 50px;
+  }
+  #myModal > div > div .form .form-btn:hover {
+    color: black;
+    background-position: left;
+  }
+  body > main > section.team > div.team__img > img {
+    width: 100%;
+  }
+  body > main > section.contact > div.contact__img > img {
+    width: 100%;
+  }
+  #myModal > div > div > form {
     display: block;
+  }
+  #header > div > .nav {
+    display: block;
+  }
+  #header > div > .nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    gap: 20px;
+  }
+  #header > div > .nav ul a {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: "Manrope", sans-serif;
+    color: white;
+    text-decoration: none;
+  }
+  #header > div > .nav ul a:hover {
+    color: #FFC999;
+    text-decoration: none;
+  }
+  .header {
+    position: fixed;
+    margin: 0 auto;
+    width: 100%;
+    z-index: 1;
+    background-color: transparent;
+    transition: background-color 0.5s ease;
+    padding: 15px 0;
+  }
+  .header__inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .header .logo img {
+    width: 200px;
+    height: 50px;
+  }
+  header.scrolled {
+    background-color: #0E1721;
+    border-bottom: 1px solid white;
+  }
+  #footer > div > div > div.logo > a > img {
+    width: 150px;
+  }
+  #header > div > a > img {
+    width: 150px;
+  }
+  body > main {
+    margin: 50px 0;
+  }
+  body > main > section.tradition {
+    text-align: center;
+  }
+  body > main > section.tradition > div > span {
+    font-family: "Manrope", sans-serif;
+    color: #ffc999;
+    font-size: 13px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ffc999;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  body > main > section.tradition > div > h2 {
+    color: white;
+    font-size: 48px;
+    text-transform: uppercase;
+    font-family: "Crimson Text", serif;
+    margin: 50px 0;
+  }
+  body > main > section.tradition > div > div > div.left__text > div.left__text-top, body > main > section.tradition > div > div > div.left__text > div.left__text-bottom {
+    color: white;
+    text-align: right;
+    padding: 10px;
+  }
+  body > main > section.tradition > div > div {
+    display: flex;
+    max-width: 1300px;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    gap: 30px;
+  }
+  body > main > section.tradition > div h6 {
+    color: #ffc999;
+    font-size: 12px;
+    font-family: "Manrope", sans-serif;
+    margin-bottom: 15px;
+  }
+  body > main > section.tradition > div h5 {
+    color: white;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: "Crimson Text", serif;
+    margin-bottom: 15px;
+  }
+  body > main > section.tradition > div p {
+    color: #D0D7DF;
+    font-size: 15px;
+    font-family: "Manrope", sans-serif;
+    line-height: 25px;
+  }
+  .slider {
+    width: 40%;
+    max-width: 450px;
+    margin: 50px auto;
+    padding: 0 10px;
+  }
+  .slider img {
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+  }
+  .slick-dots {
+    margin-bottom: 30px;
+  }
+  .slick-dots li button {
+    scale: 1.5;
+  }
+  .slick-dots li.slick-active button:before {
+    opacity: 0.75;
+    color: white;
+  }
+  body > main > section.menu {
+    margin: 100px auto;
+    max-width: 1300px;
+  }
+  body > main > section.menu > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  body > main > section.menu > div > div.menu__box img {
+    width: 25%;
+  }
+  body > main > section.menu > div > div.menu__box h3 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-size: 24px;
+    font-family: "Crimson Text", serif;
+    text-transform: uppercase;
+  }
+  body > main > section.menu > div > div.menu__box {
+    position: relative;
+    width: 25%;
+    height: 320px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  body > main > section.menu > div > div.menu__box.crab {
+    background-image: url(/assets/crab.jpg);
+  }
+  body > main > section.menu > div > div.menu__box.losos {
+    background-image: url(/assets/losos.jpg);
+  }
+  body > main > section.menu > div > div.menu__box.plates {
+    background-image: url(/assets/plates.jpg);
+  }
+  body > main > section.menu > div > div.menu__box.cocktail {
+    background-image: url(/assets/cocktail.jpg);
+  }
+  body > main > section.reservation {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/bg-wine-glass.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 320px;
+    display: flex;
+  }
+  body > main > section.reservation .reservation__inner {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  body > main > section.reservation .reservation__inner h3 {
+    color: #ffc999;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ffc999;
+    font-family: "Manrope", sans-serif;
+  }
+  body > main > section.reservation .reservation__inner h1 {
+    font-size: 30px;
+    line-height: 60px;
+    letter-spacing: 3px;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Crimson Text", serif;
+  }
+  body > main > section.reservation .reservation__inner .reservation-btn {
+    color: #ffc999;
+    background-color: transparent;
+    text-decoration: none;
+    font-style: italic;
+    font-family: "Crimson Text", serif;
+    padding: 10px 35px;
+    font-size: 18px;
+    border: 1px solid #ffc999;
+  }
+  body > main > section.team {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    gap: 50px;
+    padding: 0 20px;
+    max-width: 1300px;
+    margin: 50px auto;
+  }
+  body > main > section.team > div.team__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body > main > section.team > div.team__img > img {
+    width: 400px;
+    height: 500px;
+    border-top-left-radius: 48%;
+    border-top-right-radius: 48%;
+  }
+  body > main > section.team > div.team__text {
+    margin: 0;
+  }
+  body > main > section.team > div.team__text h3 {
+    font-size: 13px;
+    padding-bottom: 5px;
+    color: #ffc999;
+    text-transform: uppercase;
+    font-family: "Manrope", sans-serif;
+    border-bottom: 1px solid #ffc999;
+    width: 105px;
+    margin-bottom: 15px;
+  }
+  body > main > section.team > div.team__text h1 {
+    font-size: 48px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: "Crimson Text", serif;
+    margin: 40px 0;
+  }
+  body > main > section.team > div.team__text > div.team__text-icons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+  body > main > section.team > div.team__text > div.team__text-icons a .static-icon {
+    width: 30px;
+    height: 30px;
+  }
+  body > main > section.team > div.team__text > div.team__text-icons a .hover-icon {
+    display: none;
+  }
+  body > main > section.team > div.team__text > div.team__text-icons a:hover .static-icon {
+    display: none;
+    width: 30px;
+    height: 30px;
+  }
+  body > main > section.team > div.team__text > div.team__text-icons a:hover .hover-icon {
+    width: 30px;
+    height: 30px;
+    display: block;
+  }
+  body > main > section.team > div.team__text > p {
+    color: #D0D7DF;
+    margin-bottom: 30px;
+    font-size: 15px;
+    font-family: "Manrope", sans-serif;
+    line-height: 1.7;
+  }
+  body > main > section.team > div.team__text > div.team__text-bottom {
+    margin: 50px 0;
+    display: flex;
+    gap: 50px;
+  }
+  body > main > section.team > div.team__text > div.team__text-bottom h2 {
+    font-size: 28px;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Crimson Text", serif;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+  }
+  body > main > section.team > div.team__text > div.team__text-bottom ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  body > main > section.team > div.team__text > div.team__text-bottom ul li {
+    color: #D0D7DF;
+    font-size: 15px;
+    font-family: "Manrope", sans-serif;
+    line-height: 22px;
+  }
+  body > main > section.contact {
+    max-width: 1300px;
+    margin: 50px auto;
+    padding: 10px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  body > main > section.contact .contact__form h3 {
+    font-size: 13px;
+    padding-bottom: 5px;
+    color: #ffc999;
+    text-transform: uppercase;
+    font-family: "Manrope", sans-serif;
+    border-bottom: 1px solid #ffc999;
+    width: 125px;
+    margin: 0;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+  }
+  body > main > section.contact .contact__form h1 {
+    font-size: 36px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: "Crimson Text", serif;
+    margin-bottom: 20px;
+  }
+  body > main > section.contact .contact__form p {
+    width: 500px;
+    margin: 0 auto;
+    color: #D0D7DF;
+    font-size: 15px;
+    line-height: 1.7;
+    font-family: "Manrope", sans-serif;
+    margin-bottom: 30px;
+  }
+  body > main > section.contact .contact__form .form {
+    width: 70%;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  body > main > section.contact .contact__form .form #name, body > main > section.contact .contact__form .form #email, body > main > section.contact .contact__form .form #message {
+    width: 96%;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #Dcc999;
+    background-color: transparent;
+    font-size: 16px;
+    font-style: italic;
+    padding-left: 10px;
+    color: white;
+  }
+  body > main > section.contact .contact__form .form .form-btn {
+    width: 165px;
+    padding: 20px 30px;
+    font-size: 18px;
+    font-style: italic;
+    font-family: "Crimson Text", serif;
+    text-transform: capitalize;
+    border: 1px solid #FFC999;
+    background: linear-gradient(to left, #0E1721 50%, #FFC999 50%) right;
+    background-size: 200%;
+    color: #ffc999;
+    margin-top: 15px;
+    transition: 0.2s ease-out;
+  }
+  body > main > section.contact .contact__form .form .form-btn:hover {
+    color: black;
+    background-position: left;
+    cursor: pointer;
+  }
+  body > main > section.contact .contact__img {
+    display: block;
+  }
+  body > main > section.contact .contact__img img {
+    width: 100%;
+    max-height: 480px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+  }
+  #footer > div {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  #footer > div .footer__inner-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+  }
+  #footer > div .footer__inner-info .contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 0;
+  }
+  #footer > div .footer__inner-info .contacts a {
+    color: white;
+    text-decoration: none;
+  }
+  #footer > div .footer__inner-info .worktime {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  #footer > div .footer__inner-info .worktime p {
+    margin: 0;
+  }
+  #footer > div .copyright {
+    color: #D0D7DF;
+    font-size: 13px;
+    text-align: center;
+    font-family: "Manrope", sans-serif;
+    padding: 50px 0;
+  }
+  body > section.menu__title {
+    background-image: url(assets/menu-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 1000px;
+    position: relative;
+  }
+  body > section.menu__title .menu__title-text {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 395px;
+    color: white;
+  }
+  body > section.menu__title .menu__title-text h3 {
+    font-size: 12px;
+    margin-bottom: 10px;
+    font-family: "Manrope", sans-serif;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  body > section.menu__title .menu__title-text h1 {
+    font-size: 67px;
+    font-family: "Crimson Text", serif;
+    line-height: 1.5;
+  }
+  .menu__items {
+    padding: 10px;
+    margin-top: 50px;
+  }
+  .menu__items .starters, .menu__items .main__courses {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  .menu__items .starters h2, .menu__items .main__courses h2 {
+    color: #ffc999;
+    font-size: 31px;
+    font-family: "Crimson Text", serif;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ffc999;
+    margin-bottom: 50px;
+  }
+  .menu__items .starters .dish__items, .menu__items .main__courses .dish__items {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  .menu__items .starters .dish__items-col, .menu__items .main__courses .dish__items-col {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  .menu__items .starters .dish__items-col .dish, .menu__items .main__courses .dish__items-col .dish {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  .menu__items .starters .dish__items-col .dish img, .menu__items .main__courses .dish__items-col .dish img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+  }
+  .menu__items .starters .dish__items-col .dish__text, .menu__items .main__courses .dish__items-col .dish__text {
+    flex-grow: 1;
+  }
+  .menu__items .starters .dish__items-col .dish__text h3, .menu__items .main__courses .dish__items-col .dish__text h3 {
+    color: white;
+    font-size: 20px;
+    font-family: "Crimson Text", serif;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 0.05em;
+    line-height: 1.2;
+  }
+  .menu__items .starters .dish__items-col .dish__text p, .menu__items .main__courses .dish__items-col .dish__text p {
+    color: #D0D7DF;
+    font-family: "Manrope", sans-serif;
+    font-size: 13px;
+    font-style: italic;
+    letter-spacing: 0.05em;
+    line-height: 18px;
+  }
+  .menu__items .starters .dish__items-col .dish h5, .menu__items .main__courses .dish__items-col .dish h5 {
+    color: #ffc999;
+    font-size: 18px;
+    font-family: "Crimson Text", serif;
+  }
+  #footer > div .__inner-info {
+    justify-content: space-around;
+  }
+  body > section.about__title {
+    background-image: url(assets/about-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 320px;
+    min-height: 1000px;
+    position: relative;
+  }
+  body > section.about__title .about__title-text {
+    position: absolute;
+    right: 0;
+    left: 0;
+    text-align: center;
+    width: 350px;
+    margin: 0 auto;
+    padding-top: 395px;
+    color: white;
+  }
+  body > section.about__title .about__title-text h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: "Manrope", sans-serif;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  body > section.about__title .about__title-text h1 {
+    font-size: 60px;
+    font-family: "Crimson Text", serif;
+  }
+  .history {
+    margin: 30px 0;
+    padding: 10px;
+  }
+  .history h1 {
+    text-align: center;
+    font-size: 33px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 30px;
+  }
+  .history .origins,
+  .history .relocation,
+  .history .traditions,
+  .history .celebrity,
+  .history .accalades,
+  .history .sustainability,
+  .history .community {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 150px;
+    margin-bottom: 100px;
+  }
+  .history .origins__text,
+  .history .relocation__text,
+  .history .traditions__text,
+  .history .celebrity__text,
+  .history .accalades__text,
+  .history .sustainability__text,
+  .history .community__text {
+    width: 100%;
+    margin: 30px 0;
+  }
+  .history .origins__text h3,
+  .history .relocation__text h3,
+  .history .traditions__text h3,
+  .history .celebrity__text h3,
+  .history .accalades__text h3,
+  .history .sustainability__text h3,
+  .history .community__text h3 {
+    color: #FFC999;
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-family: "Crimson Text", serif;
+    border-bottom: 1px solid #ffc999;
+  }
+  .history .origins__text p,
+  .history .relocation__text p,
+  .history .traditions__text p,
+  .history .celebrity__text p,
+  .history .accalades__text p,
+  .history .sustainability__text p,
+  .history .community__text p {
+    color: #D0D7DF;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: "Manrope", sans-serif;
+  }
+  .history .origins-bg,
+  .history .relocation-bg,
+  .history .traditions-bg,
+  .history .celebrity-bg,
+  .history .accalades-bg,
+  .history .sustainability-bg,
+  .history .community-bg {
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .history .origins-bg {
+    background-image: url(assets/origins.jpg);
+  }
+  .history .relocation-bg {
+    background-image: url(assets/relocation.jpg);
+  }
+  .history .traditions-bg {
+    background-image: url(assets/TRADITIONS.jpg);
+  }
+  .history .celebrity-bg {
+    background-image: url(assets/CELEBRITY.jpg);
+  }
+  .history .accalades-bg {
+    background-image: url(assets/ACCOLADES.jpg);
+  }
+  .history .sustainability-bg {
+    background-image: url(assets/SUSTAINABILITY.jpg);
+  }
+  .history .community-bg {
+    background-image: url(assets/community.jpg);
+  }
+  .mission {
+    display: none;
+  }
+  .mission .slider .slick-list {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .mission .slider h1 {
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: white;
+    font-family: "Crimson Text", serif;
+  }
+  .mission .slider p {
+    color: white;
+    font-family: "Manrope", sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .mission .slider .slide {
+    text-align: center;
+    padding: 25px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .mission .slider .slide1 {
+    width: 500px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.7)), url("/assets/slide1.jpg");
+    background-position: bottom;
+    border-radius: 20px;
+  }
+  .mission .slider .slide2 {
+    width: 500px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.7)), url("/assets/slide2.jpg");
+    background-position: bottom;
+    border-radius: 20px;
+  }
+  .mission .slider .slide3 {
+    width: 500px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.7)), url("/assets/slide3.jpg");
+    background-position: bottom;
+    border-radius: 20px;
+  }
+  .mission .slider .slide4 {
+    width: 500px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.7)), url("/assets/slide4.webp");
+    background-position: bottom;
+    border-radius: 20px;
+  }
+  .workers {
+    text-align: center;
+  }
+  .workers span {
+    font-family: "Manrope", sans-serif;
+    color: #ffc999;
+    font-size: 23px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ffc999;
+    text-transform: uppercase;
+  }
+  .workers h2 {
+    color: white;
+    font-size: 48px;
+    text-transform: uppercase;
+    font-family: "Crimson Text", serif;
+    margin: 30px 0;
+  }
+  .workers__list {
+    width: 80%;
+    margin: 100px auto;
+  }
+  .workers__list-item {
+    max-width: 370px;
+    max-height: 560px;
+    margin: 50px auto;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .workers__list-item img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 47%;
+    border-top-right-radius: 47%;
+    margin-bottom: 30px;
+  }
+  .workers__list-item h4 {
+    color: #FFC999;
+    font-size: 12px;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  .workers__list-item h2 {
+    color: white;
+    font-size: 22px;
+    text-align: left;
+  }
+  body > section.contact__title {
+    background-image: url(assets/contact-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 320px;
+    min-height: 1000px;
+    position: relative;
+  }
+  body > section.contact__title .contact__title-text {
+    position: absolute;
+    right: 0;
+    left: 0;
+    text-align: center;
+    width: 350px;
+    margin: 0 auto;
+    padding-top: 395px;
+    color: white;
+  }
+  body > section.contact__title .contact__title-text h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: "Manrope", sans-serif;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  body > section.contact__title .contact__title-text h1 {
+    font-size: 60px;
+    font-family: "Crimson Text", serif;
+  }
+  .contact__us {
+    padding: 10px;
+  }
+  .contact__us-info {
+    width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+  }
+  .contact__us-info .address, .contact__us-info .phone, .contact__us-info .hours {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    margin-bottom: 50px;
+    color: white;
+  }
+  .contact__us-info .address h2, .contact__us-info .phone h2, .contact__us-info .hours h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .contact__us-info .address p, .contact__us-info .phone p, .contact__us-info .hours p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .contact__us-info .address a, .contact__us-info .phone a, .contact__us-info .hours a {
+    font-size: 18px;
+    color: #FFC999;
+    text-decoration: none;
+    font-style: italic;
+    position: relative;
+  }
+  .contact__us-info .address a::before, .contact__us-info .phone a::before, .contact__us-info .hours a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #FFC999;
+    transition: width 0.35s;
+  }
+  .contact__us-info .address a:hover:before, .contact__us-info .phone a:hover:before, .contact__us-info .hours a:hover:before {
+    width: 100%;
+  }
+  .contact__us-form {
+    width: 500px;
+    margin: 0 auto;
+  }
+  .contact__us-form .form {
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .contact__us-form .form #name, .contact__us-form .form #email, .contact__us-form .form #message {
+    width: 96%;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #Dcc999;
+    background-color: transparent;
+    font-size: 16px;
+    font-style: italic;
+    padding-left: 10px;
+    color: white;
+  }
+  .contact__us-form .form .form-btn {
+    width: 165px;
+    padding: 20px 30px;
+    font-size: 18px;
+    font-style: italic;
+    font-family: "Crimson Text", serif;
+    text-transform: capitalize;
+    border: 1px solid #FFC999;
+    background: linear-gradient(to left, #0E1721 50%, #FFC999 50%) right;
+    background-size: 200%;
+    color: #ffc999;
+    margin-top: 15px;
+  }
+  .map {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 50px;
   }
 }/*# sourceMappingURL=style.css.map */

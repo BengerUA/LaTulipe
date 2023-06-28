@@ -51,6 +51,7 @@ window.addEventListener('scroll', function() {
     }
 });
 
+
 $(document).ready(function() {
     $("#header").load("header.html");
     $("#footer").load("footer.html");
@@ -87,9 +88,3 @@ document.addEventListener("DOMContentLoaded", function() {
     L.marker([50.45, 30.52]).addTo(map).bindPopup('Greetings from Ukraine!').openPopup();
 });
 
-
-
-function toggleMenu() {
-    let menu = document.querySelector('.menu__aside');
-    menu.classList.toggle('show');
-}
